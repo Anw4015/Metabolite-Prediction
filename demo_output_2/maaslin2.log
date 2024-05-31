@@ -1,0 +1,881 @@
+2024-05-31 13:23:13.931848 INFO::Writing function arguments to log file
+2024-05-31 13:23:13.933038 DEBUG::Function arguments
+2024-05-31 13:23:13.933321 DEBUG::Output folder: demo_output_2
+2024-05-31 13:23:13.933579 DEBUG::Min Abundance: 0.000000
+2024-05-31 13:23:13.933836 DEBUG::Min Prevalence: 0.100000
+2024-05-31 13:23:13.934086 DEBUG::Normalization: TSS
+2024-05-31 13:23:13.934314 DEBUG::Transform: LOG
+2024-05-31 13:23:13.934546 DEBUG::Analysis method: LM
+2024-05-31 13:23:13.934739 DEBUG::Max significance: 0.250000
+2024-05-31 13:23:13.934949 DEBUG::Random effects:
+2024-05-31 13:23:13.935147 DEBUG::Fixed effects: diagnosis_modified,antibiotic,immunosuppressant,mesalamine,steroids
+2024-05-31 13:23:13.935338 DEBUG::Correction method: BH
+2024-05-31 13:23:13.935538 DEBUG::Standardize: FALSE
+2024-05-31 13:23:13.935719 DEBUG::Cores: 1
+2024-05-31 13:23:13.93591 INFO::Verifying options selected are valid
+2024-05-31 13:23:13.936584 INFO::Determining format of input files
+2024-05-31 13:23:13.937234 INFO::Input format is data samples as rows and metadata samples as rows
+2024-05-31 13:23:13.940204 DEBUG::A total of 220 samples were found in both the data and metadata
+2024-05-31 13:23:13.940557 DEBUG::Reordering data/metadata to use same sample ordering
+2024-05-31 13:23:13.943044 INFO::Formula for fixed effects: expr ~  diagnosis_modified + antibiotic + immunosuppressant + mesalamine + steroids
+2024-05-31 13:23:13.943799 INFO::Factor detected for categorial metadata 'diagnosis_modified'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-05-31 13:23:13.944779 INFO::Filter data based on min abundance and min prevalence
+2024-05-31 13:23:13.945327 INFO::Total samples in data: 220
+2024-05-31 13:23:13.946022 INFO::Min samples required with min abundance for a feature not to be filtered: 22.000000
+2024-05-31 13:23:13.949526 INFO::Total filtered features: 0
+2024-05-31 13:23:13.950194 INFO::Filtered feature names from abundance and prevalence filtering:
+2024-05-31 13:23:14.005527 INFO::Total filtered features with variance filtering: 1
+2024-05-31 13:23:14.006272 INFO::Filtered feature names from variance filtering: Sample
+2024-05-31 13:23:14.006739 INFO::Running selected normalization method: TSS
+2024-05-31 13:23:14.01151 INFO::Bypass z-score application to metadata
+2024-05-31 13:23:14.012046 INFO::Running selected transform method: LOG
+2024-05-31 13:23:14.019078 INFO::Running selected analysis method: LM
+2024-05-31 13:23:14.020183 INFO::Fitting model to feature number 1, C18.neg_Cluster_0004..4.hydroxystyrene
+2024-05-31 13:23:14.023114 INFO::Fitting model to feature number 2, C18.neg_Cluster_0019..p.hydroxyphenylacetate
+2024-05-31 13:23:14.025579 INFO::Fitting model to feature number 3, C18.neg_Cluster_0025..acesulfame
+2024-05-31 13:23:14.028434 INFO::Fitting model to feature number 4, C18.neg_Cluster_0031..phenyllactate
+2024-05-31 13:23:14.030833 INFO::Fitting model to feature number 5, C18.neg_Cluster_0045..azelate
+2024-05-31 13:23:14.033336 INFO::Fitting model to feature number 6, C18.neg_Cluster_0064..sebacate
+2024-05-31 13:23:14.03571 INFO::Fitting model to feature number 7, C18.neg_Cluster_0079..undecanedionate
+2024-05-31 13:23:14.037588 INFO::Fitting model to feature number 8, C18.neg_Cluster_0090..acetytyrosine
+2024-05-31 13:23:14.039575 INFO::Fitting model to feature number 9, C18.neg_Cluster_0107..myristic.acid
+2024-05-31 13:23:14.041814 INFO::Fitting model to feature number 10, C18.neg_Cluster_0111..dodecanedioic.acid
+2024-05-31 13:23:14.043888 INFO::Fitting model to feature number 11, C18.neg_Cluster_0144..2.hydroxymyristic.acid
+2024-05-31 13:23:14.046322 INFO::Fitting model to feature number 12, C18.neg_Cluster_0164..palmitoleic.acid
+2024-05-31 13:23:14.048679 INFO::Fitting model to feature number 13, C18.neg_Cluster_0171..palmitic.acid
+2024-05-31 13:23:14.050791 INFO::Fitting model to feature number 14, C18.neg_Cluster_0177..tetradecanedioate
+2024-05-31 13:23:14.052761 INFO::Fitting model to feature number 15, C18.neg_Cluster_0183..1.2.3.4.tetrahydro.b.carboline.1.3.dicarboxylic.acid
+2024-05-31 13:23:14.055017 INFO::Fitting model to feature number 16, C18.neg_Cluster_0219..2.hydroxyhexadecanoate
+2024-05-31 13:23:14.059072 INFO::Fitting model to feature number 17, C18.neg_Cluster_0244..alpha.linolenic.acid
+2024-05-31 13:23:14.061607 INFO::Fitting model to feature number 18, C18.neg_Cluster_0246..linoleic.acid
+2024-05-31 13:23:14.064311 INFO::Fitting model to feature number 19, C18.neg_Cluster_0250..oleic.acid
+2024-05-31 13:23:14.066946 INFO::Fitting model to feature number 20, C18.neg_Cluster_0256..stearic.acid
+2024-05-31 13:23:14.069385 INFO::Fitting model to feature number 21, C18.neg_Cluster_0268..hexadecanedioic.acid
+2024-05-31 13:23:14.071677 INFO::Fitting model to feature number 22, C18.neg_Cluster_0351..eicosapentaenoic.acid
+2024-05-31 13:23:14.074006 INFO::Fitting model to feature number 23, C18.neg_Cluster_0354..arachidonic.acid
+2024-05-31 13:23:14.076254 INFO::Fitting model to feature number 24, C18.neg_Cluster_0361..eicosatrienoic.acid
+2024-05-31 13:23:14.078811 INFO::Fitting model to feature number 25, C18.neg_Cluster_0373..eicosenoate
+2024-05-31 13:23:14.081188 INFO::Fitting model to feature number 26, C18.neg_Cluster_0393..12.13.diHOME
+2024-05-31 13:23:14.084774 INFO::Fitting model to feature number 27, C18.neg_Cluster_0394..9.10.diHOME
+2024-05-31 13:23:14.087101 INFO::Fitting model to feature number 28, C18.neg_Cluster_0472..docosahexaenoic.acid
+2024-05-31 13:23:14.089315 INFO::Fitting model to feature number 29, C18.neg_Cluster_0486..carnosol
+2024-05-31 13:23:14.091297 INFO::Fitting model to feature number 30, C18.neg_Cluster_0490..docosapentaenoic.acid
+2024-05-31 13:23:14.093472 INFO::Fitting model to feature number 31, C18.neg_Cluster_0506..adrenic.acid
+2024-05-31 13:23:14.095549 INFO::Fitting model to feature number 32, C18.neg_Cluster_0515..palmitoylethanolamide
+2024-05-31 13:23:14.097622 INFO::Fitting model to feature number 33, C18.neg_Cluster_0530..13.docosenoate
+2024-05-31 13:23:14.100158 INFO::Fitting model to feature number 34, C18.neg_Cluster_0563..palmitoylethanolamide
+2024-05-31 13:23:14.102226 INFO::Fitting model to feature number 35, C18.neg_Cluster_0591..eicosatrienoic.acid
+2024-05-31 13:23:14.104252 INFO::Fitting model to feature number 36, C18.neg_Cluster_0672..nervonic.acid
+2024-05-31 13:23:14.106287 INFO::Fitting model to feature number 37, C18.neg_Cluster_0709..arachidonic.acid
+2024-05-31 13:23:14.108499 INFO::Fitting model to feature number 38, C18.neg_Cluster_0729..docosapentaenoic.acid
+2024-05-31 13:23:14.110809 INFO::Fitting model to feature number 39, C18.neg_Cluster_0731..lithocholic.acid
+2024-05-31 13:23:14.113146 INFO::Fitting model to feature number 40, C18.neg_Cluster_0832..chenodeoxycholate
+2024-05-31 13:23:14.115017 INFO::Fitting model to feature number 41, C18.neg_Cluster_0833..deoxycholic.acid
+2024-05-31 13:23:14.116644 INFO::Fitting model to feature number 42, C18.neg_Cluster_0863..docosapentaenoic.acid
+2024-05-31 13:23:14.118931 INFO::Fitting model to feature number 43, C18.neg_Cluster_0900..ketodeoxycholate
+2024-05-31 13:23:14.120574 INFO::Fitting model to feature number 44, C18.neg_Cluster_0901..7.ketodeoxycholate
+2024-05-31 13:23:14.122233 INFO::Fitting model to feature number 45, C18.neg_Cluster_0927..alpha.muricholate
+2024-05-31 13:23:14.124277 INFO::Fitting model to feature number 46, C18.neg_Cluster_0930..cholate
+2024-05-31 13:23:14.126284 INFO::Fitting model to feature number 47, C18.neg_Cluster_1045..chenodeoxycholate
+2024-05-31 13:23:14.128271 INFO::Fitting model to feature number 48, C18.neg_Cluster_1060..chenodeoxycholate
+2024-05-31 13:23:14.130241 INFO::Fitting model to feature number 49, C18.neg_Cluster_1081..glycolithocholic.acid
+2024-05-31 13:23:14.132097 INFO::Fitting model to feature number 50, C18.neg_Cluster_1129..chenodeoxycholate
+2024-05-31 13:23:14.13386 INFO::Fitting model to feature number 51, C18.neg_Cluster_1131..arachidonic.acid
+2024-05-31 13:23:14.135685 INFO::Fitting model to feature number 52, C18.neg_Cluster_1178..cholate
+2024-05-31 13:23:14.137308 INFO::Fitting model to feature number 53, C18.neg_Cluster_1196..glycodeoxycholic.acid
+2024-05-31 13:23:14.138872 INFO::Fitting model to feature number 54, C18.neg_Cluster_1197..glycoursodeoxycholic.acid
+2024-05-31 13:23:14.140707 INFO::Fitting model to feature number 55, C18.neg_Cluster_1258..cholate
+2024-05-31 13:23:14.142672 INFO::Fitting model to feature number 56, C18.neg_Cluster_1273..cholate
+2024-05-31 13:23:14.14458 INFO::Fitting model to feature number 57, C18.neg_Cluster_1275..oleanolic.acid
+2024-05-31 13:23:14.146685 INFO::Fitting model to feature number 58, C18.neg_Cluster_1292..chenodeoxycholate
+2024-05-31 13:23:14.148594 INFO::Fitting model to feature number 59, C18.neg_Cluster_1324..docosapentaenoic.acid
+2024-05-31 13:23:14.150351 INFO::Fitting model to feature number 60, C18.neg_Cluster_1372..cholate
+2024-05-31 13:23:14.152553 INFO::Fitting model to feature number 61, C18.neg_Cluster_1385..maslinic.acid
+2024-05-31 13:23:14.154275 INFO::Fitting model to feature number 62, C18.neg_Cluster_1465..taurolithocholic.acid
+2024-05-31 13:23:14.155924 INFO::Fitting model to feature number 63, C18.neg_Cluster_1574..taurochenodesoxycholic.acid
+2024-05-31 13:23:14.157767 INFO::Fitting model to feature number 64, C18.neg_Cluster_1575..taurodeoxycholic.acid
+2024-05-31 13:23:14.184034 INFO::Fitting model to feature number 65, C18.neg_Cluster_1596..oleanolic.acid
+2024-05-31 13:23:14.18755 INFO::Fitting model to feature number 66, C18.neg_Cluster_1620..arachidonic.acid
+2024-05-31 13:23:14.190038 INFO::Fitting model to feature number 67, C18.neg_Cluster_1621..cholate
+2024-05-31 13:23:14.192261 INFO::Fitting model to feature number 68, C18.neg_Cluster_1680..maslinic.acid
+2024-05-31 13:23:14.193919 INFO::Fitting model to feature number 69, C18.neg_Cluster_1722..cholate
+2024-05-31 13:23:14.19579 INFO::Fitting model to feature number 70, C18.neg_Cluster_1803..maslinic.acid
+2024-05-31 13:23:14.197373 INFO::Fitting model to feature number 71, C18.neg_Cluster_1941..arachidonic.acid
+2024-05-31 13:23:14.198961 INFO::Fitting model to feature number 72, C18.neg_Cluster_2021..urobilin
+2024-05-31 13:23:14.200702 INFO::Fitting model to feature number 73, C18.neg_Cluster_2068..maslinic.acid
+2024-05-31 13:23:14.202168 INFO::Fitting model to feature number 74, C8.pos_Cluster_0100..7.hexadecenoic.acid.methyl.ester
+2024-05-31 13:23:14.203877 INFO::Fitting model to feature number 75, C8.pos_Cluster_0123..sphingosine
+2024-05-31 13:23:14.205752 INFO::Fitting model to feature number 76, C8.pos_Cluster_0136..piperine
+2024-05-31 13:23:14.207265 INFO::Fitting model to feature number 77, C8.pos_Cluster_0166..sphingosine
+2024-05-31 13:23:14.209085 INFO::Fitting model to feature number 78, C8.pos_Cluster_0168..palmitoylethanolamide
+2024-05-31 13:23:14.210917 INFO::Fitting model to feature number 79, C8.pos_Cluster_0253..sphingosine
+2024-05-31 13:23:14.212517 INFO::Fitting model to feature number 80, C8.pos_Cluster_0264..linoleoyl.ethanolamide
+2024-05-31 13:23:14.214032 INFO::Fitting model to feature number 81, C8.pos_Cluster_0277..stearoyl.ethanolamide
+2024-05-31 13:23:14.215678 INFO::Fitting model to feature number 82, C8.pos_Cluster_0288..palmitoyl.glycerol
+2024-05-31 13:23:14.217142 INFO::Fitting model to feature number 83, C8.pos_Cluster_0339..linoleoyl.ethanolamide
+2024-05-31 13:23:14.218586 INFO::Fitting model to feature number 84, C8.pos_Cluster_0341..N.oleoylethanolamine
+2024-05-31 13:23:14.220449 INFO::Fitting model to feature number 85, C8.pos_Cluster_0416..cholesterol
+2024-05-31 13:23:14.222164 INFO::Fitting model to feature number 86, C8.pos_Cluster_0478..cholestenone
+2024-05-31 13:23:14.223769 INFO::Fitting model to feature number 87, C8.pos_Cluster_0515..beta.sitosterol
+2024-05-31 13:23:14.22552 INFO::Fitting model to feature number 88, C8.pos_Cluster_0554..cholestenone
+2024-05-31 13:23:14.227088 INFO::Fitting model to feature number 89, C8.pos_Cluster_0629..cholestenone
+2024-05-31 13:23:14.228623 INFO::Fitting model to feature number 90, C8.pos_Cluster_0705..cholestenone
+2024-05-31 13:23:14.230521 INFO::Fitting model to feature number 91, C8.pos_Cluster_0988..sphingosine
+2024-05-31 13:23:14.232118 INFO::Fitting model to feature number 92, C8.pos_Cluster_1495..linoleoyl.ethanolamide
+2024-05-31 13:23:14.233687 INFO::Fitting model to feature number 93, C8.pos_Cluster_1849..cholestenone
+2024-05-31 13:23:14.235451 INFO::Fitting model to feature number 94, C8.pos_Cluster_1900..cholestenone
+2024-05-31 13:23:14.237018 INFO::Fitting model to feature number 95, HILIC.neg_Cluster_0003..propionate
+2024-05-31 13:23:14.238542 INFO::Fitting model to feature number 96, HILIC.neg_Cluster_0015..alanine
+2024-05-31 13:23:14.240264 INFO::Fitting model to feature number 97, HILIC.neg_Cluster_0016..oxalate
+2024-05-31 13:23:14.241792 INFO::Fitting model to feature number 98, HILIC.neg_Cluster_0020..lactate
+2024-05-31 13:23:14.243403 INFO::Fitting model to feature number 99, HILIC.neg_Cluster_0032..2.aminobutyric.acid
+2024-05-31 13:23:14.245196 INFO::Fitting model to feature number 100, HILIC.neg_Cluster_0033..malonate
+2024-05-31 13:23:14.247014 INFO::Fitting model to feature number 101, HILIC.neg_Cluster_0034..alpha.hydroxybutyrate
+2024-05-31 13:23:14.248715 INFO::Fitting model to feature number 102, HILIC.neg_Cluster_0035..serine
+2024-05-31 13:23:14.25054 INFO::Fitting model to feature number 103, HILIC.neg_Cluster_0036..glycerate
+2024-05-31 13:23:14.252329 INFO::Fitting model to feature number 104, HILIC.neg_Cluster_0040..pyrocatechol
+2024-05-31 13:23:14.254109 INFO::Fitting model to feature number 105, HILIC.neg_Cluster_0049..uracil
+2024-05-31 13:23:14.256017 INFO::Fitting model to feature number 106, HILIC.neg_Cluster_0059..proline
+2024-05-31 13:23:14.257623 INFO::Fitting model to feature number 107, HILIC.neg_Cluster_0062..alpha.ketoisovalerate
+2024-05-31 13:23:14.260377 INFO::Fitting model to feature number 108, HILIC.neg_Cluster_0064..caproic.acid
+2024-05-31 13:23:14.26247 INFO::Fitting model to feature number 109, HILIC.neg_Cluster_0066..valine
+2024-05-31 13:23:14.264321 INFO::Fitting model to feature number 110, HILIC.neg_Cluster_0069..succite
+2024-05-31 13:23:14.26589 INFO::Fitting model to feature number 111, HILIC.neg_Cluster_0073..threonine
+2024-05-31 13:23:14.26774 INFO::Fitting model to feature number 112, HILIC.neg_Cluster_0079..4.hydroxybenzaldehyde
+2024-05-31 13:23:14.269246 INFO::Fitting model to feature number 113, HILIC.neg_Cluster_0082..nicotinate
+2024-05-31 13:23:14.270739 INFO::Fitting model to feature number 114, HILIC.neg_Cluster_0084..4.methylcatechol
+2024-05-31 13:23:14.272457 INFO::Fitting model to feature number 115, HILIC.neg_Cluster_0085..taurine
+2024-05-31 13:23:14.27399 INFO::Fitting model to feature number 116, HILIC.neg_Cluster_0087..thymine
+2024-05-31 13:23:14.275608 INFO::Fitting model to feature number 117, HILIC.neg_Cluster_0103..acetylalanine
+2024-05-31 13:23:14.277416 INFO::Fitting model to feature number 118, HILIC.neg_Cluster_0105..leucine
+2024-05-31 13:23:14.279039 INFO::Fitting model to feature number 119, HILIC.neg_Cluster_0112..asparagine
+2024-05-31 13:23:14.280618 INFO::Fitting model to feature number 120, HILIC.neg_Cluster_0117..aspartate
+2024-05-31 13:23:14.282378 INFO::Fitting model to feature number 121, HILIC.neg_Cluster_0118..malate
+2024-05-31 13:23:14.283889 INFO::Fitting model to feature number 122, HILIC.neg_Cluster_0120..adenine
+2024-05-31 13:23:14.285456 INFO::Fitting model to feature number 123, HILIC.neg_Cluster_0122..erythronic.acid
+2024-05-31 13:23:14.287233 INFO::Fitting model to feature number 124, HILIC.neg_Cluster_0123..hypoxanthine
+2024-05-31 13:23:14.288746 INFO::Fitting model to feature number 125, HILIC.neg_Cluster_0125..phenylacetate
+2024-05-31 13:23:14.29017 INFO::Fitting model to feature number 126, HILIC.neg_Cluster_0129..salicylate
+2024-05-31 13:23:14.291905 INFO::Fitting model to feature number 127, HILIC.neg_Cluster_0133..4.nitrophenol
+2024-05-31 13:23:14.293557 INFO::Fitting model to feature number 128, HILIC.neg_Cluster_0156..caprylic.acid
+2024-05-31 13:23:14.295131 INFO::Fitting model to feature number 129, HILIC.neg_Cluster_0159..alpha.ketoglutarate
+2024-05-31 13:23:14.296857 INFO::Fitting model to feature number 130, HILIC.neg_Cluster_0161..2.methylglutaric.acid
+2024-05-31 13:23:14.29835 INFO::Fitting model to feature number 131, HILIC.neg_Cluster_0162..glutamine
+2024-05-31 13:23:14.299999 INFO::Fitting model to feature number 132, HILIC.neg_Cluster_0166..glutamate
+2024-05-31 13:23:14.30174 INFO::Fitting model to feature number 133, HILIC.neg_Cluster_0169..2.hydroxyglutarate
+2024-05-31 13:23:14.303232 INFO::Fitting model to feature number 134, HILIC.neg_Cluster_0173..methionine
+2024-05-31 13:23:14.304851 INFO::Fitting model to feature number 135, HILIC.neg_Cluster_0174..tartarate
+2024-05-31 13:23:14.306689 INFO::Fitting model to feature number 136, HILIC.neg_Cluster_0176..xylose
+2024-05-31 13:23:14.308271 INFO::Fitting model to feature number 137, HILIC.neg_Cluster_0181..hydrocinnamic.acid
+2024-05-31 13:23:14.309803 INFO::Fitting model to feature number 138, HILIC.neg_Cluster_0182..guanine
+2024-05-31 13:23:14.3116 INFO::Fitting model to feature number 139, HILIC.neg_Cluster_0187..xanthine
+2024-05-31 13:23:14.31309 INFO::Fitting model to feature number 140, HILIC.neg_Cluster_0192..ribitol
+2024-05-31 13:23:14.314538 INFO::Fitting model to feature number 141, HILIC.neg_Cluster_0201..histidine
+2024-05-31 13:23:14.316326 INFO::Fitting model to feature number 142, HILIC.neg_Cluster_0203..orotate
+2024-05-31 13:23:14.31781 INFO::Fitting model to feature number 143, HILIC.neg_Cluster_0204..imidazolelactate
+2024-05-31 13:23:14.319328 INFO::Fitting model to feature number 144, HILIC.neg_Cluster_0220..3.methyladipate.pimelate
+2024-05-31 13:23:14.320978 INFO::Fitting model to feature number 145, HILIC.neg_Cluster_0230..levoglucosan
+2024-05-31 13:23:14.335796 INFO::Fitting model to feature number 146, HILIC.neg_Cluster_0232..acesulfame
+2024-05-31 13:23:14.337952 INFO::Fitting model to feature number 147, HILIC.neg_Cluster_0237..fucose
+2024-05-31 13:23:14.339907 INFO::Fitting model to feature number 148, HILIC.neg_Cluster_0242..phenylalanine
+2024-05-31 13:23:14.341595 INFO::Fitting model to feature number 149, HILIC.neg_Cluster_0247..L.phenyllactic.acid
+2024-05-31 13:23:14.343318 INFO::Fitting model to feature number 150, HILIC.neg_Cluster_0254..urate
+2024-05-31 13:23:14.3453 INFO::Fitting model to feature number 151, HILIC.neg_Cluster_0283..shikimate
+2024-05-31 13:23:14.346802 INFO::Fitting model to feature number 152, HILIC.neg_Cluster_0288..suberate
+2024-05-31 13:23:14.348243 INFO::Fitting model to feature number 153, HILIC.neg_Cluster_0290..arginine
+2024-05-31 13:23:14.350067 INFO::Fitting model to feature number 154, HILIC.neg_Cluster_0296..citrulline
+2024-05-31 13:23:14.351613 INFO::Fitting model to feature number 155, HILIC.neg_Cluster_0299..ascorbate
+2024-05-31 13:23:14.353034 INFO::Fitting model to feature number 156, HILIC.neg_Cluster_0324..tyrosine
+2024-05-31 13:23:14.354754 INFO::Fitting model to feature number 157, HILIC.neg_Cluster_0328..homovanillate
+2024-05-31 13:23:14.356215 INFO::Fitting model to feature number 158, HILIC.neg_Cluster_0331..sorbitol
+2024-05-31 13:23:14.357654 INFO::Fitting model to feature number 159, HILIC.neg_Cluster_0332..saccharin
+2024-05-31 13:23:14.359388 INFO::Fitting model to feature number 160, HILIC.neg_Cluster_0335..4.pyridoxate
+2024-05-31 13:23:14.360875 INFO::Fitting model to feature number 161, HILIC.neg_Cluster_0365..azelaic.acid
+2024-05-31 13:23:14.36248 INFO::Fitting model to feature number 162, HILIC.neg_Cluster_0372..N.acetylglutamate
+2024-05-31 13:23:14.36436 INFO::Fitting model to feature number 163, HILIC.neg_Cluster_0392..citrate
+2024-05-31 13:23:14.365836 INFO::Fitting model to feature number 164, HILIC.neg_Cluster_0401..glucurote
+2024-05-31 13:23:14.367312 INFO::Fitting model to feature number 165, HILIC.neg_Cluster_0441..sebacate
+2024-05-31 13:23:14.369058 INFO::Fitting model to feature number 166, HILIC.neg_Cluster_0452..tryptophan
+2024-05-31 13:23:14.370563 INFO::Fitting model to feature number 167, HILIC.neg_Cluster_0480..1.3.7.trimethylurate
+2024-05-31 13:23:14.37208 INFO::Fitting model to feature number 168, HILIC.neg_Cluster_0552..pantothete
+2024-05-31 13:23:14.373771 INFO::Fitting model to feature number 169, HILIC.neg_Cluster_0562..ethyl.glucuronide
+2024-05-31 13:23:14.375365 INFO::Fitting model to feature number 170, HILIC.neg_Cluster_0622..1.2.3.4.tetrahydro.1.methyl.beta.carboline.3.carboxylic.acid
+2024-05-31 13:23:14.376896 INFO::Fitting model to feature number 171, HILIC.neg_Cluster_0677..cystine
+2024-05-31 13:23:14.378798 INFO::Fitting model to feature number 172, HILIC.neg_Cluster_0697..pentadecanoate
+2024-05-31 13:23:14.380345 INFO::Fitting model to feature number 173, HILIC.neg_Cluster_0706..uridine
+2024-05-31 13:23:14.381808 INFO::Fitting model to feature number 174, HILIC.neg_Cluster_0707..pseudouridine
+2024-05-31 13:23:14.383469 INFO::Fitting model to feature number 175, HILIC.neg_Cluster_0740..deoxyinosine
+2024-05-31 13:23:14.384889 INFO::Fitting model to feature number 176, HILIC.neg_Cluster_0824..inosine
+2024-05-31 13:23:14.386318 INFO::Fitting model to feature number 177, HILIC.neg_Cluster_0841..heptadecanoate
+2024-05-31 13:23:14.387973 INFO::Fitting model to feature number 178, HILIC.neg_Cluster_0909..guanosine
+2024-05-31 13:23:14.389416 INFO::Fitting model to feature number 179, HILIC.neg_Cluster_1002..eicosapentaenoic.acid
+2024-05-31 13:23:14.391057 INFO::Fitting model to feature number 180, HILIC.neg_Cluster_1088..linoleoyl.ethanolamide
+2024-05-31 13:23:14.392973 INFO::Fitting model to feature number 181, HILIC.neg_Cluster_1126..docosapentaenoate
+2024-05-31 13:23:14.394612 INFO::Fitting model to feature number 182, HILIC.neg_Cluster_1170..lactose
+2024-05-31 13:23:14.396242 INFO::Fitting model to feature number 183, HILIC.neg_Cluster_1300..riboflavin
+2024-05-31 13:23:14.397953 INFO::Fitting model to feature number 184, HILIC.neg_Cluster_1303..lithocholate
+2024-05-31 13:23:14.399458 INFO::Fitting model to feature number 185, HILIC.neg_Cluster_1325..linoleoyl.ethanolamide
+2024-05-31 13:23:14.401212 INFO::Fitting model to feature number 186, HILIC.neg_Cluster_1403..cholate
+2024-05-31 13:23:14.40308 INFO::Fitting model to feature number 187, HILIC.neg_Cluster_1571..glycocholate
+2024-05-31 13:23:14.40465 INFO::Fitting model to feature number 188, HILIC.pos_Cluster_0007..putrescine
+2024-05-31 13:23:14.406648 INFO::Fitting model to feature number 189, HILIC.pos_Cluster_0008..alanine
+2024-05-31 13:23:14.408469 INFO::Fitting model to feature number 190, HILIC.pos_Cluster_0009..beta.alanine
+2024-05-31 13:23:14.410141 INFO::Fitting model to feature number 191, HILIC.pos_Cluster_0022..choline
+2024-05-31 13:23:14.411656 INFO::Fitting model to feature number 192, HILIC.pos_Cluster_0024..serine
+2024-05-31 13:23:14.413877 INFO::Fitting model to feature number 193, HILIC.pos_Cluster_0032..cytosine
+2024-05-31 13:23:14.415494 INFO::Fitting model to feature number 194, HILIC.pos_Cluster_0033..histamine
+2024-05-31 13:23:14.416944 INFO::Fitting model to feature number 195, HILIC.pos_Cluster_0036..creatinine
+2024-05-31 13:23:14.41861 INFO::Fitting model to feature number 196, HILIC.pos_Cluster_0038..N.acetylputrescine
+2024-05-31 13:23:14.420147 INFO::Fitting model to feature number 197, HILIC.pos_Cluster_0041..proline
+2024-05-31 13:23:14.421675 INFO::Fitting model to feature number 198, HILIC.pos_Cluster_0046..valine
+2024-05-31 13:23:14.423409 INFO::Fitting model to feature number 199, HILIC.pos_Cluster_0048..betaine
+2024-05-31 13:23:14.424972 INFO::Fitting model to feature number 200, HILIC.pos_Cluster_0049..threonine
+2024-05-31 13:23:14.426716 INFO::Fitting model to feature number 201, HILIC.pos_Cluster_0062..nicotinic.acid
+2024-05-31 13:23:14.428535 INFO::Fitting model to feature number 202, HILIC.pos_Cluster_0066..taurine
+2024-05-31 13:23:14.430095 INFO::Fitting model to feature number 203, HILIC.pos_Cluster_0079..pyroglutamic.acid
+2024-05-31 13:23:14.431761 INFO::Fitting model to feature number 204, HILIC.pos_Cluster_0081..pipecolic.acid
+2024-05-31 13:23:14.43362 INFO::Fitting model to feature number 205, HILIC.pos_Cluster_0082..N.methylproline
+2024-05-31 13:23:14.435177 INFO::Fitting model to feature number 206, HILIC.pos_Cluster_0086..N.acetylputrescine
+2024-05-31 13:23:14.437228 INFO::Fitting model to feature number 207, HILIC.pos_Cluster_0089..hydroxyproline
+2024-05-31 13:23:14.439076 INFO::Fitting model to feature number 208, HILIC.pos_Cluster_0090..creatine
+2024-05-31 13:23:14.440715 INFO::Fitting model to feature number 209, HILIC.pos_Cluster_0091..leucine
+2024-05-31 13:23:14.442426 INFO::Fitting model to feature number 210, HILIC.pos_Cluster_0092..isoleucine
+2024-05-31 13:23:14.445808 INFO::Fitting model to feature number 211, HILIC.pos_Cluster_0099..asparagine
+2024-05-31 13:23:14.447956 INFO::Fitting model to feature number 212, HILIC.pos_Cluster_0100..ornithine
+2024-05-31 13:23:14.449634 INFO::Fitting model to feature number 213, HILIC.pos_Cluster_0108..hypoxanthine
+2024-05-31 13:23:14.451674 INFO::Fitting model to feature number 214, HILIC.pos_Cluster_0110..1.methylnicotinamide
+2024-05-31 13:23:14.45334 INFO::Fitting model to feature number 215, HILIC.pos_Cluster_0113..trigonelline
+2024-05-31 13:23:14.45494 INFO::Fitting model to feature number 216, HILIC.pos_Cluster_0114..2.hydroxyphenethylamine
+2024-05-31 13:23:14.456781 INFO::Fitting model to feature number 217, HILIC.pos_Cluster_0116..urocanic.acid
+2024-05-31 13:23:14.458453 INFO::Fitting model to feature number 218, HILIC.pos_Cluster_0121..imidazole.propionate
+2024-05-31 13:23:14.460276 INFO::Fitting model to feature number 219, HILIC.pos_Cluster_0134..proline.betaine
+2024-05-31 13:23:14.462146 INFO::Fitting model to feature number 220, HILIC.pos_Cluster_0150..4.guanidinobutanoic.acid
+2024-05-31 13:23:14.463696 INFO::Fitting model to feature number 221, HILIC.pos_Cluster_0151..butyrobetaine
+2024-05-31 13:23:14.465263 INFO::Fitting model to feature number 222, HILIC.pos_Cluster_0152..acetylcholine
+2024-05-31 13:23:14.467003 INFO::Fitting model to feature number 223, HILIC.pos_Cluster_0156..glutamine
+2024-05-31 13:23:14.468488 INFO::Fitting model to feature number 224, HILIC.pos_Cluster_0157..lysine
+2024-05-31 13:23:14.470023 INFO::Fitting model to feature number 225, HILIC.pos_Cluster_0160..glutamate
+2024-05-31 13:23:14.471802 INFO::Fitting model to feature number 226, HILIC.pos_Cluster_0167..methionine
+2024-05-31 13:23:14.487381 INFO::Fitting model to feature number 227, HILIC.pos_Cluster_0172..triethanolamine
+2024-05-31 13:23:14.489678 INFO::Fitting model to feature number 228, HILIC.pos_Cluster_0177..4.hydroxy.3.methylacetophenone
+2024-05-31 13:23:14.491746 INFO::Fitting model to feature number 229, HILIC.pos_Cluster_0184..pyridoxamine
+2024-05-31 13:23:14.49339 INFO::Fitting model to feature number 230, HILIC.pos_Cluster_0230..carnitine
+2024-05-31 13:23:14.495066 INFO::Fitting model to feature number 231, HILIC.pos_Cluster_0244..methionine.sulfoxide
+2024-05-31 13:23:14.496898 INFO::Fitting model to feature number 232, HILIC.pos_Cluster_0245..1.methylguanine
+2024-05-31 13:23:14.498488 INFO::Fitting model to feature number 233, HILIC.pos_Cluster_0246..7.methylguanine
+2024-05-31 13:23:14.500105 INFO::Fitting model to feature number 234, HILIC.pos_Cluster_0248..phenylalanine
+2024-05-31 13:23:14.502047 INFO::Fitting model to feature number 235, HILIC.pos_Cluster_0254..3.methylxanthine
+2024-05-31 13:23:14.503535 INFO::Fitting model to feature number 236, HILIC.pos_Cluster_0268..pyridoxamine
+2024-05-31 13:23:14.505038 INFO::Fitting model to feature number 237, HILIC.pos_Cluster_0272..3.methylhistidine
+2024-05-31 13:23:14.50675 INFO::Fitting model to feature number 238, HILIC.pos_Cluster_0295..arginine
+2024-05-31 13:23:14.508223 INFO::Fitting model to feature number 239, HILIC.pos_Cluster_0298..dimethyllysine
+2024-05-31 13:23:14.509708 INFO::Fitting model to feature number 240, HILIC.pos_Cluster_0306..citrulline
+2024-05-31 13:23:14.511418 INFO::Fitting model to feature number 241, HILIC.pos_Cluster_0333..tyrosine
+2024-05-31 13:23:14.513045 INFO::Fitting model to feature number 242, HILIC.pos_Cluster_0374..N.acetylspermidine
+2024-05-31 13:23:14.514629 INFO::Fitting model to feature number 243, HILIC.pos_Cluster_0379..trimethyllysine
+2024-05-31 13:23:14.516407 INFO::Fitting model to feature number 244, HILIC.pos_Cluster_0383..kynurenic.acid
+2024-05-31 13:23:14.517879 INFO::Fitting model to feature number 245, HILIC.pos_Cluster_0384..N.acetylglutamic.acid
+2024-05-31 13:23:14.519386 INFO::Fitting model to feature number 246, HILIC.pos_Cluster_0405..caffeine
+2024-05-31 13:23:14.521112 INFO::Fitting model to feature number 247, HILIC.pos_Cluster_0419..N.acetylhistidine
+2024-05-31 13:23:14.52262 INFO::Fitting model to feature number 248, HILIC.pos_Cluster_0422..5.acetylamino.6.amino.3.methyluracil
+2024-05-31 13:23:14.524124 INFO::Fitting model to feature number 249, HILIC.pos_Cluster_0447..ADMA
+2024-05-31 13:23:14.525866 INFO::Fitting model to feature number 250, HILIC.pos_Cluster_0453..C2.carnitine
+2024-05-31 13:23:14.527362 INFO::Fitting model to feature number 251, HILIC.pos_Cluster_0455..tryptophan
+2024-05-31 13:23:14.528851 INFO::Fitting model to feature number 252, HILIC.pos_Cluster_0495..N.acetylglutamic.acid
+2024-05-31 13:23:14.53054 INFO::Fitting model to feature number 253, HILIC.pos_Cluster_0521..L.1.2.3.4.tetrahydro.beta.carboline.3.carboxylic.acid.
+2024-05-31 13:23:14.532036 INFO::Fitting model to feature number 254, HILIC.pos_Cluster_0524..N.acetyl.L.arginine
+2024-05-31 13:23:14.533801 INFO::Fitting model to feature number 255, HILIC.pos_Cluster_0540..pantothenate
+2024-05-31 13:23:14.535539 INFO::Fitting model to feature number 256, HILIC.pos_Cluster_0590..carnosine
+2024-05-31 13:23:14.53699 INFO::Fitting model to feature number 257, HILIC.pos_Cluster_0657..geranyl.acetoacetate.
+2024-05-31 13:23:14.538467 INFO::Fitting model to feature number 258, HILIC.pos_Cluster_0658..geranyl.acetoacetate.
+2024-05-31 13:23:14.540135 INFO::Fitting model to feature number 259, HILIC.pos_Cluster_0667..anserine
+2024-05-31 13:23:14.541666 INFO::Fitting model to feature number 260, HILIC.pos_Cluster_0728..2.deoxyadenosine
+2024-05-31 13:23:14.543164 INFO::Fitting model to feature number 261, HILIC.pos_Cluster_0734..deoxyinosine
+2024-05-31 13:23:14.544991 INFO::Fitting model to feature number 262, HILIC.pos_Cluster_0797..thiamine
+2024-05-31 13:23:14.546662 INFO::Fitting model to feature number 263, HILIC.pos_Cluster_0817..atenolol
+2024-05-31 13:23:14.548257 INFO::Fitting model to feature number 264, HILIC.pos_Cluster_0822..inosine
+2024-05-31 13:23:14.550041 INFO::Fitting model to feature number 265, HILIC.pos_Cluster_0913..ethyl.9.hexadecenoate
+2024-05-31 13:23:14.55156 INFO::Fitting model to feature number 266, HILIC.pos_Cluster_0914..8.hydroxy.deoxyguanosine
+2024-05-31 13:23:14.553208 INFO::Fitting model to feature number 267, HILIC.pos_Cluster_0927..piperine
+2024-05-31 13:23:14.555013 INFO::Fitting model to feature number 268, HILIC.pos_Cluster_0936..diacetylspermine
+2024-05-31 13:23:14.556621 INFO::Fitting model to feature number 269, HILIC.pos_Cluster_1017..sphinganine
+2024-05-31 13:23:14.558806 INFO::Fitting model to feature number 270, HILIC.pos_Cluster_1113..phytosphingosine
+2024-05-31 13:23:14.560729 INFO::Fitting model to feature number 271, HILIC.pos_Cluster_1148..linoleoyl.ethanolamide
+2024-05-31 13:23:14.562448 INFO::Fitting model to feature number 272, HILIC.pos_Cluster_1160..linoleoyl.ethanolamide
+2024-05-31 13:23:14.56428 INFO::Fitting model to feature number 273, HILIC.pos_Cluster_1370..5alpha.cholestanol
+2024-05-31 13:23:14.566101 INFO::Fitting model to feature number 274, HILIC.pos_Cluster_1374..C14.carnitine
+2024-05-31 13:23:14.567616 INFO::Fitting model to feature number 275, HILIC.pos_Cluster_1486..C16.carnitine
+2024-05-31 13:23:14.569114 INFO::Fitting model to feature number 276, HILIC.pos_Cluster_1580..C18.2.carnitine
+2024-05-31 13:23:14.570829 INFO::Fitting model to feature number 277, HILIC.pos_Cluster_2052..bilirubin
+2024-05-31 13:23:14.572333 INFO::Fitting model to feature number 278, HILIC.pos_Cluster_2093..urobilin.
+2024-05-31 13:23:14.620259 INFO::Counting total values for each feature
+2024-05-31 13:23:14.64318 INFO::Writing filtered data to file demo_output_2/features/filtered_data.tsv
+2024-05-31 13:23:14.669052 INFO::Writing filtered, normalized data to file demo_output_2/features/filtered_data_norm.tsv
+2024-05-31 13:23:14.705699 INFO::Writing filtered, normalized, transformed data to file demo_output_2/features/filtered_data_norm_transformed.tsv
+2024-05-31 13:23:14.740931 INFO::Writing residuals to file demo_output_2/fits/residuals.rds
+2024-05-31 13:23:14.755221 INFO::Writing fitted values to file demo_output_2/fits/fitted.rds
+2024-05-31 13:23:14.762665 INFO::Writing all results to file (ordered by increasing q-values): demo_output_2/all_results.tsv
+2024-05-31 13:23:14.76847 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): demo_output_2/significant_results.tsv
+2024-05-31 13:23:14.771346 INFO::Writing heatmap of significant results to file: demo_output_2/heatmap.pdf
+2024-05-31 13:23:14.804713 INFO::Writing association plots (one for each significant association) to output folder: demo_output_2
+2024-05-31 13:23:14.80803 INFO::Plotting associations from most to least significant, grouped by metadata
+2024-05-31 13:23:14.808649 INFO::Plotting data for metadata number 1, diagnosis_modified
+2024-05-31 13:23:14.809333 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_2021..urobilin
+2024-05-31 13:23:14.879076 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_2093..urobilin.
+2024-05-31 13:23:14.936109 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1486..C16.carnitine
+2024-05-31 13:23:15.003035 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0268..pyridoxamine
+2024-05-31 13:23:15.060387 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0490..docosapentaenoic.acid
+2024-05-31 13:23:15.126879 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0863..docosapentaenoic.acid
+2024-05-31 13:23:15.610398 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0988..sphingosine
+2024-05-31 13:23:15.689307 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0521..L.1.2.3.4.tetrahydro.beta.carboline.3.carboxylic.acid.
+2024-05-31 13:23:15.761327 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1580..C18.2.carnitine
+2024-05-31 13:23:15.81997 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0506..adrenic.acid
+2024-05-31 13:23:15.887367 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0901..7.ketodeoxycholate
+2024-05-31 13:23:15.945432 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1324..docosapentaenoic.acid
+2024-05-31 13:23:16.033784 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0441..sebacate
+2024-05-31 13:23:16.091851 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0268..hexadecanedioic.acid
+2024-05-31 13:23:16.163171 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0729..docosapentaenoic.acid
+2024-05-31 13:23:16.251647 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0591..eicosatrienoic.acid
+2024-05-31 13:23:16.429617 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0184..pyridoxamine
+2024-05-31 13:23:16.504799 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0079..undecanedionate
+2024-05-31 13:23:16.563752 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0264..linoleoyl.ethanolamide
+2024-05-31 13:23:16.634214 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0361..eicosatrienoic.acid
+2024-05-31 13:23:16.692974 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0253..sphingosine
+2024-05-31 13:23:16.763364 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1374..C14.carnitine
+2024-05-31 13:23:16.822239 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0341..N.oleoylethanolamine
+2024-05-31 13:23:16.892105 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0384..N.acetylglutamic.acid
+2024-05-31 13:23:16.950996 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0045..azelate
+2024-05-31 13:23:17.021294 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0540..pantothenate
+2024-05-31 13:23:17.09283 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0339..linoleoyl.ethanolamide
+2024-05-31 13:23:17.151794 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0524..N.acetyl.L.arginine
+2024-05-31 13:23:17.343264 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0183..1.2.3.4.tetrahydro.b.carboline.1.3.dicarboxylic.acid
+2024-05-31 13:23:17.416304 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0166..sphingosine
+2024-05-31 13:23:17.487891 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0177..4.hydroxy.3.methylacetophenone
+2024-05-31 13:23:17.547055 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0832..chenodeoxycholate
+2024-05-31 13:23:17.618185 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0288..suberate
+2024-05-31 13:23:17.688929 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0658..geranyl.acetoacetate.
+2024-05-31 13:23:17.748761 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0062..nicotinic.acid
+2024-05-31 13:23:17.818759 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1088..linoleoyl.ethanolamide
+2024-05-31 13:23:17.877622 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1325..linoleoyl.ethanolamide
+2024-05-31 13:23:17.948273 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0220..3.methyladipate.pimelate
+2024-05-31 13:23:18.007303 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0144..2.hydroxymyristic.acid
+2024-05-31 13:23:18.082733 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0486..carnosol
+2024-05-31 13:23:18.153036 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0495..N.acetylglutamic.acid
+2024-05-31 13:23:18.212883 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0540..pantothenate
+2024-05-31 13:23:18.282929 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0064..caproic.acid
+2024-05-31 13:23:18.341668 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0629..cholestenone
+2024-05-31 13:23:18.413032 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0365..azelaic.acid
+2024-05-31 13:23:18.483576 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0064..sebacate
+2024-05-31 13:23:18.545977 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0111..dodecanedioic.acid
+2024-05-31 13:23:18.615948 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1060..chenodeoxycholate
+2024-05-31 13:23:18.674677 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1370..5alpha.cholestanol
+2024-05-31 13:23:18.769892 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0563..palmitoylethanolamide
+2024-05-31 13:23:18.844418 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1126..docosapentaenoate
+2024-05-31 13:23:18.904438 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0123..sphingosine
+2024-05-31 13:23:19.009584 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0268..pyridoxamine
+2024-05-31 13:23:19.169601 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0478..cholestenone
+2024-05-31 13:23:19.247756 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0657..geranyl.acetoacetate.
+2024-05-31 13:23:19.308293 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_1495..linoleoyl.ethanolamide
+2024-05-31 13:23:19.380265 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_1900..cholestenone
+2024-05-31 13:23:19.439343 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1372..cholate
+2024-05-31 13:23:19.512153 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0122..erythronic.acid
+2024-05-31 13:23:19.582044 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0554..cholestenone
+2024-05-31 13:23:19.645194 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_1849..cholestenone
+2024-05-31 13:23:19.71647 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1045..chenodeoxycholate
+2024-05-31 13:23:19.776466 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0181..hydrocinnamic.acid
+2024-05-31 13:23:19.852048 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1722..cholate
+2024-05-31 13:23:19.912373 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0082..nicotinate
+2024-05-31 13:23:20.019428 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1148..linoleoyl.ethanolamide
+2024-05-31 13:23:20.181914 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0524..N.acetyl.L.arginine
+2024-05-31 13:23:20.265851 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0082..nicotinate
+2024-05-31 13:23:20.338215 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1403..cholate
+2024-05-31 13:23:20.398465 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1941..arachidonic.acid
+2024-05-31 13:23:20.470161 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1621..cholate
+2024-05-31 13:23:20.529527 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0168..palmitoylethanolamide
+2024-05-31 13:23:20.602069 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0372..N.acetylglutamate
+2024-05-31 13:23:20.675768 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0062..nicotinic.acid
+2024-05-31 13:23:20.736074 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0486..carnosol
+2024-05-31 13:23:20.809175 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0219..2.hydroxyhexadecanoate
+2024-05-31 13:23:20.86902 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0622..1.2.3.4.tetrahydro.1.methyl.beta.carboline.3.carboxylic.acid
+2024-05-31 13:23:20.94109 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0521..L.1.2.3.4.tetrahydro.beta.carboline.3.carboxylic.acid.
+2024-05-31 13:23:21.046199 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0081..pipecolic.acid
+2024-05-31 13:23:21.209337 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0677..cystine
+2024-05-31 13:23:21.2893 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0184..pyridoxamine
+2024-05-31 13:23:21.348979 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1129..chenodeoxycholate
+2024-05-31 13:23:21.421984 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1273..cholate
+2024-05-31 13:23:21.49515 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_2093..urobilin.
+2024-05-31 13:23:21.555683 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0552..pantothete
+2024-05-31 13:23:21.653939 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0040..pyrocatechol
+2024-05-31 13:23:21.715336 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0122..erythronic.acid
+2024-05-31 13:23:21.792498 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0086..N.acetylputrescine
+2024-05-31 13:23:21.852849 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1258..cholate
+2024-05-31 13:23:21.928975 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1160..linoleoyl.ethanolamide
+2024-05-31 13:23:22.001968 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0515..palmitoylethanolamide
+2024-05-31 13:23:22.187044 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0930..cholate
+2024-05-31 13:23:22.28174 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1596..oleanolic.acid
+2024-05-31 13:23:22.346729 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1178..cholate
+2024-05-31 13:23:22.422667 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1131..arachidonic.acid
+2024-05-31 13:23:22.483743 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1292..chenodeoxycholate
+2024-05-31 13:23:22.560293 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1941..arachidonic.acid
+2024-05-31 13:23:22.620507 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0182..guanine
+2024-05-31 13:23:22.696072 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1275..oleanolic.acid
+2024-05-31 13:23:22.772232 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0697..pentadecanoate
+2024-05-31 13:23:22.834459 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0177..tetradecanedioate
+2024-05-31 13:23:22.910877 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0705..cholestenone
+2024-05-31 13:23:22.97142 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0120..adenine
+2024-05-31 13:23:23.074737 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0038..N.acetylputrescine
+2024-05-31 13:23:23.241375 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1620..arachidonic.acid
+2024-05-31 13:23:23.327939 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0152..acetylcholine
+2024-05-31 13:23:23.406524 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0084..4.methylcatechol
+2024-05-31 13:23:23.47129 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0506..adrenic.acid
+2024-05-31 13:23:23.548281 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0731..lithocholic.acid
+2024-05-31 13:23:23.608026 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0156..caprylic.acid
+2024-05-31 13:23:23.684477 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_2021..urobilin
+2024-05-31 13:23:23.759182 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0833..deoxycholic.acid
+2024-05-31 13:23:23.821021 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0552..pantothete
+2024-05-31 13:23:23.897045 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0709..arachidonic.acid
+2024-05-31 13:23:23.957679 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0384..N.acetylglutamic.acid
+2024-05-31 13:23:24.034418 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0298..dimethyllysine
+2024-05-31 13:23:24.241583 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0354..arachidonic.acid
+2024-05-31 13:23:24.312083 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0081..pipecolic.acid
+2024-05-31 13:23:24.390506 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0079..undecanedionate
+2024-05-31 13:23:24.450685 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0927..alpha.muricholate
+2024-05-31 13:23:24.528609 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0354..arachidonic.acid
+2024-05-31 13:23:24.625959 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1680..maslinic.acid
+2024-05-31 13:23:24.689504 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1002..eicosapentaenoic.acid
+2024-05-31 13:23:24.769569 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0495..N.acetylglutamic.acid
+2024-05-31 13:23:24.832887 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0064..caproic.acid
+2024-05-31 13:23:24.911091 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0709..arachidonic.acid
+2024-05-31 13:23:24.972795 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1620..arachidonic.acid
+2024-05-31 13:23:25.050369 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1303..lithocholate
+2024-05-31 13:23:25.259487 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1486..C16.carnitine
+2024-05-31 13:23:25.336799 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0114..2.hydroxyphenethylamine
+2024-05-31 13:23:25.414668 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0622..1.2.3.4.tetrahydro.1.methyl.beta.carboline.3.carboxylic.acid
+2024-05-31 13:23:25.477492 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0447..ADMA
+2024-05-31 13:23:25.555465 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0472..docosahexaenoic.acid
+2024-05-31 13:23:25.618573 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0084..4.methylcatechol
+2024-05-31 13:23:25.697215 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0657..geranyl.acetoacetate.
+2024-05-31 13:23:25.759283 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1131..arachidonic.acid
+2024-05-31 13:23:25.838001 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_2068..maslinic.acid
+2024-05-31 13:23:25.917724 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1385..maslinic.acid
+2024-05-31 13:23:25.980869 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0335..4.pyridoxate
+2024-05-31 13:23:26.058749 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0441..sebacate
+2024-05-31 13:23:26.151811 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0901..7.ketodeoxycholate
+2024-05-31 13:23:26.339605 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0244..methionine.sulfoxide
+2024-05-31 13:23:26.41972 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0183..1.2.3.4.tetrahydro.b.carboline.1.3.dicarboxylic.acid
+2024-05-31 13:23:26.48647 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0490..docosapentaenoic.acid
+2024-05-31 13:23:26.565089 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0900..ketodeoxycholate
+2024-05-31 13:23:26.62694 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0863..docosapentaenoic.acid
+2024-05-31 13:23:26.704282 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0003..propionate
+2024-05-31 13:23:26.78215 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0040..pyrocatechol
+2024-05-31 13:23:26.851714 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0085..taurine
+2024-05-31 13:23:26.930925 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0295..arginine
+2024-05-31 13:23:26.993101 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0033..histamine
+2024-05-31 13:23:27.071661 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1324..docosapentaenoic.acid
+2024-05-31 13:23:27.286942 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0361..eicosatrienoic.acid
+2024-05-31 13:23:27.360871 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0697..pentadecanoate
+2024-05-31 13:23:27.440404 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0335..4.pyridoxate
+2024-05-31 13:23:27.501204 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0365..azelaic.acid
+2024-05-31 13:23:27.580031 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0988..sphingosine
+2024-05-31 13:23:27.675895 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0181..hydrocinnamic.acid
+2024-05-31 13:23:27.740231 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0177..4.hydroxy.3.methylacetophenone
+2024-05-31 13:23:27.820929 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0658..geranyl.acetoacetate.
+2024-05-31 13:23:27.884168 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0161..2.methylglutaric.acid
+2024-05-31 13:23:27.965341 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0007..putrescine
+2024-05-31 13:23:28.02801 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0372..N.acetylglutamate
+2024-05-31 13:23:28.133319 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0472..docosahexaenoic.acid
+2024-05-31 13:23:28.299966 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0797..thiamine
+2024-05-31 13:23:28.39986 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0288..suberate
+2024-05-31 13:23:28.47917 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0160..glutamate
+2024-05-31 13:23:28.546639 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1803..maslinic.acid
+2024-05-31 13:23:28.627936 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0797..thiamine
+2024-05-31 13:23:28.690972 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0230..carnitine
+2024-05-31 13:23:28.772028 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0629..cholestenone
+2024-05-31 13:23:28.833966 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0156..caprylic.acid
+2024-05-31 13:23:28.915045 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0220..3.methyladipate.pimelate
+2024-05-31 13:23:28.994321 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0036..glycerate
+2024-05-31 13:23:29.060787 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0022..choline
+2024-05-31 13:23:29.179189 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0182..guanine
+2024-05-31 13:23:29.346036 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0064..sebacate
+2024-05-31 13:23:29.434367 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0351..eicosapentaenoic.acid
+2024-05-31 13:23:29.508808 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0277..stearoyl.ethanolamide
+2024-05-31 13:23:29.580055 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0452..tryptophan
+2024-05-31 13:23:29.662572 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1170..lactose
+2024-05-31 13:23:29.724188 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0230..carnitine
+2024-05-31 13:23:29.806625 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0045..azelate
+2024-05-31 13:23:29.878607 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0832..chenodeoxycholate
+2024-05-31 13:23:29.954396 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0728..2.deoxyadenosine
+2024-05-31 13:23:30.036755 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0936..diacetylspermine
+2024-05-31 13:23:30.099524 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0144..2.hydroxymyristic.acid
+2024-05-31 13:23:30.314514 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0254..3.methylxanthine
+2024-05-31 13:23:30.406957 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0066..valine
+2024-05-31 13:23:30.477441 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0090..creatine
+2024-05-31 13:23:30.558472 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1374..C14.carnitine
+2024-05-31 13:23:30.620447 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0090..creatine
+2024-05-31 13:23:30.701413 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1571..glycocholate
+2024-05-31 13:23:30.946961 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0085..taurine
+2024-05-31 13:23:31.00473 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0562..ethyl.glucuronide
+2024-05-31 13:23:31.072608 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0247..L.phenyllactic.acid
+2024-05-31 13:23:31.130482 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0066..taurine
+2024-05-31 13:23:31.227527 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0351..eicosapentaenoic.acid
+2024-05-31 13:23:31.387634 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_1849..cholestenone
+2024-05-31 13:23:31.464445 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0219..2.hydroxyhexadecanoate
+2024-05-31 13:23:31.524774 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0339..linoleoyl.ethanolamide
+2024-05-31 13:23:31.591857 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0020..lactate
+2024-05-31 13:23:31.650054 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0120..adenine
+2024-05-31 13:23:31.716641 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0677..cystine
+2024-05-31 13:23:31.778675 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0244..alpha.linolenic.acid
+2024-05-31 13:23:31.844941 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0299..ascorbate
+2024-05-31 13:23:31.904743 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0162..glutamine
+2024-05-31 13:23:31.970007 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0453..C2.carnitine
+2024-05-31 13:23:32.037669 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0059..proline
+2024-05-31 13:23:32.095164 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0112..asparagine
+2024-05-31 13:23:32.161052 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0134..proline.betaine
+2024-05-31 13:23:32.254227 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1002..eicosapentaenoic.acid
+2024-05-31 13:23:32.428217 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0079..pyroglutamic.acid
+2024-05-31 13:23:32.498093 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1580..C18.2.carnitine
+2024-05-31 13:23:32.564861 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0134..proline.betaine
+2024-05-31 13:23:32.623445 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0082..N.methylproline
+2024-05-31 13:23:32.690897 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0379..trimethyllysine
+2024-05-31 13:23:32.758187 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1680..maslinic.acid
+2024-05-31 13:23:32.817329 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0379..trimethyllysine
+2024-05-31 13:23:32.883569 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0253..sphingosine
+2024-05-31 13:23:32.942225 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0306..citrulline
+2024-05-31 13:23:33.009341 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0032..cytosine
+2024-05-31 13:23:33.067854 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1197..glycoursodeoxycholic.acid
+2024-05-31 13:23:33.135932 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0105..leucine
+2024-05-31 13:23:33.204568 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0125..phenylacetate
+2024-05-31 13:23:33.299287 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0299..ascorbate
+2024-05-31 13:23:33.475079 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0453..C2.carnitine
+2024-05-31 13:23:33.542272 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0113..trigonelline
+2024-05-31 13:23:33.60745 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0125..phenylacetate
+2024-05-31 13:23:33.667262 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0082..N.methylproline
+2024-05-31 13:23:33.732961 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1385..maslinic.acid
+2024-05-31 13:23:33.817876 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0003..propionate
+2024-05-31 13:23:33.876737 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0254..urate
+2024-05-31 13:23:33.947295 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0150..4.guanidinobutanoic.acid
+2024-05-31 13:23:34.006453 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0152..acetylcholine
+2024-05-31 13:23:34.075724 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0562..ethyl.glucuronide
+2024-05-31 13:23:34.135678 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0242..phenylalanine
+2024-05-31 13:23:34.205072 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0913..ethyl.9.hexadecenoate
+2024-05-31 13:23:34.264339 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0066..taurine
+2024-05-31 13:23:34.334913 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0254..urate
+2024-05-31 13:23:34.39348 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0554..cholestenone
+2024-05-31 13:23:34.468827 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0478..cholestenone
+2024-05-31 13:23:34.527574 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0034..alpha.hydroxybutyrate
+2024-05-31 13:23:34.598246 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0161..2.methylglutaric.acid
+2024-05-31 13:23:34.669554 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1126..docosapentaenoate
+2024-05-31 13:23:34.728035 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1303..lithocholate
+2024-05-31 13:23:34.798143 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0116..urocanic.acid
+2024-05-31 13:23:34.856418 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_1900..cholestenone
+2024-05-31 13:23:34.927012 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0090..acetytyrosine
+2024-05-31 13:23:34.98585 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1292..chenodeoxycholate
+2024-05-31 13:23:35.187509 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0036..creatinine
+2024-05-31 13:23:35.264931 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1275..oleanolic.acid
+2024-05-31 13:23:35.340055 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0264..linoleoyl.ethanolamide
+2024-05-31 13:23:35.411723 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0020..lactate
+2024-05-31 13:23:35.471043 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1196..glycodeoxycholic.acid
+2024-05-31 13:23:35.542194 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0156..glutamine
+2024-05-31 13:23:35.601529 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0298..dimethyllysine
+2024-05-31 13:23:35.671494 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0841..heptadecanoate
+2024-05-31 13:23:35.731655 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_2068..maslinic.acid
+2024-05-31 13:23:35.801618 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1148..linoleoyl.ethanolamide
+2024-05-31 13:23:35.874713 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0728..2.deoxyadenosine
+2024-05-31 13:23:35.936795 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0079..pyroglutamic.acid
+2024-05-31 13:23:36.042244 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0729..docosapentaenoic.acid
+2024-05-31 13:23:36.209434 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0059..proline
+2024-05-31 13:23:36.28659 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0515..beta.sitosterol
+2024-05-31 13:23:36.345992 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0032..2.aminobutyric.acid
+2024-05-31 13:23:36.417492 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0341..N.oleoylethanolamine
+2024-05-31 13:23:36.488938 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0015..alanine
+2024-05-31 13:23:36.548321 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0591..eicosatrienoic.acid
+2024-05-31 13:23:36.639543 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0480..1.3.7.trimethylurate
+2024-05-31 13:23:36.701308 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1596..oleanolic.acid
+2024-05-31 13:23:36.773766 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0914..8.hydroxy.deoxyguanosine
+2024-05-31 13:23:36.833796 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0172..triethanolamine
+2024-05-31 13:23:36.907111 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0162..glutamine
+2024-05-31 13:23:36.967149 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1113..phytosphingosine
+2024-05-31 13:23:37.076115 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0066..valine
+2024-05-31 13:23:37.264608 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0288..palmitoyl.glycerol
+2024-05-31 13:23:37.332132 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0288..palmitoyl.glycerol
+2024-05-31 13:23:37.405103 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1574..taurochenodesoxycholic.acid
+2024-05-31 13:23:37.465665 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0250..oleic.acid
+2024-05-31 13:23:37.538484 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0046..valine
+2024-05-31 13:23:37.598587 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0247..L.phenyllactic.acid
+2024-05-31 13:23:37.669969 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1017..sphinganine
+2024-05-31 13:23:37.731168 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0034..alpha.hydroxybutyrate
+2024-05-31 13:23:37.8025 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0563..palmitoylethanolamide
+2024-05-31 13:23:37.863474 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0022..choline
+2024-05-31 13:23:37.935318 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1045..chenodeoxycholate
+2024-05-31 13:23:38.007838 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0048..betaine
+2024-05-31 13:23:38.103246 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0046..valine
+2024-05-31 13:23:38.965453 INFO::Plotting data for metadata number 2, antibiotic
+2024-05-31 13:23:38.966389 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_1303..lithocholate
+2024-05-31 13:23:39.024512 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0833..deoxycholic.acid
+2024-05-31 13:23:39.3355 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0731..lithocholic.acid
+2024-05-31 13:23:39.407127 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0151..butyrobetaine
+2024-05-31 13:23:39.480683 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0031..phenyllactate
+2024-05-31 13:23:39.556984 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0082..nicotinate
+2024-05-31 13:23:39.616906 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0401..glucurote
+2024-05-31 13:23:39.690141 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0824..inosine
+2024-05-31 13:23:39.749951 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0062..nicotinic.acid
+2024-05-31 13:23:39.839877 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0453..C2.carnitine
+2024-05-31 13:23:39.900463 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1196..glycodeoxycholic.acid
+2024-05-31 13:23:39.974602 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0108..hypoxanthine
+2024-05-31 13:23:40.036173 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0187..xanthine
+2024-05-31 13:23:40.240102 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0268..pyridoxamine
+2024-05-31 13:23:40.332083 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0230..carnitine
+2024-05-31 13:23:40.398397 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0184..pyridoxamine
+2024-05-31 13:23:40.474071 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0296..citrulline
+2024-05-31 13:23:40.535654 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0181..hydrocinnamic.acid
+2024-05-31 13:23:40.610976 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_1374..C14.carnitine
+2024-05-31 13:23:40.672452 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0299..ascorbate
+2024-05-31 13:23:40.746453 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1575..taurodeoxycholic.acid
+2024-05-31 13:23:40.807296 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0123..hypoxanthine
+2024-05-31 13:23:40.882319 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0004..4.hydroxystyrene
+2024-05-31 13:23:40.942467 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0220..3.methyladipate.pimelate
+2024-05-31 13:23:41.02446 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0914..8.hydroxy.deoxyguanosine
+2024-05-31 13:23:41.134773 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_1300..riboflavin
+2024-05-31 13:23:41.305467 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0090..creatine
+2024-05-31 13:23:41.390586 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0161..2.methylglutaric.acid
+2024-05-31 13:23:41.451031 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1574..taurochenodesoxycholic.acid
+2024-05-31 13:23:41.527489 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_1017..sphinganine
+2024-05-31 13:23:41.587707 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0540..pantothenate
+2024-05-31 13:23:41.66362 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0003..propionate
+2024-05-31 13:23:41.734248 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0822..inosine
+2024-05-31 13:23:41.799763 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0082..N.methylproline
+2024-05-31 13:23:41.875822 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0797..thiamine
+2024-05-31 13:23:41.936395 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0166..glutamate
+2024-05-31 13:23:42.011549 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0049..uracil
+2024-05-31 13:23:42.071384 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0707..pseudouridine
+2024-05-31 13:23:42.27683 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0079..undecanedionate
+2024-05-31 13:23:42.368085 INFO::Creating boxplot for categorical data, antibiotic vs C8.pos_Cluster_0554..cholestenone
+2024-05-31 13:23:42.43091 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1722..cholate
+2024-05-31 13:23:42.512157 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0048..betaine
+2024-05-31 13:23:42.571207 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1178..cholate
+2024-05-31 13:23:42.64683 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0909..guanosine
+2024-05-31 13:23:42.719291 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0176..xylose
+2024-05-31 13:23:42.782681 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0125..phenylacetate
+2024-05-31 13:23:42.879845 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0930..cholate
+2024-05-31 13:23:42.941198 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0150..4.guanidinobutanoic.acid
+2024-05-31 13:23:43.020838 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1621..cholate
+2024-05-31 13:23:43.08256 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1060..chenodeoxycholate
+2024-05-31 13:23:43.295392 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0306..citrulline
+2024-05-31 13:23:43.370762 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0081..pipecolic.acid
+2024-05-31 13:23:43.450609 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0706..uridine
+2024-05-31 13:23:43.512825 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_2021..urobilin
+2024-05-31 13:23:43.588844 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0152..acetylcholine
+2024-05-31 13:23:43.665305 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1258..cholate
+2024-05-31 13:23:43.729021 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0441..sebacate
+2024-05-31 13:23:43.806524 INFO::Creating boxplot for categorical data, antibiotic vs C8.pos_Cluster_0478..cholestenone
+2024-05-31 13:23:43.86804 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0117..aspartate
+2024-05-31 13:23:43.948753 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1273..cholate
+2024-05-31 13:23:44.010268 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0173..methionine
+2024-05-31 13:23:44.087058 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0036..glycerate
+2024-05-31 13:23:44.177745 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0288..suberate
+2024-05-31 13:23:44.36985 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1372..cholate
+2024-05-31 13:23:44.44782 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_2093..urobilin.
+2024-05-31 13:23:44.5141 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_1571..glycocholate
+2024-05-31 13:23:44.591109 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_1148..linoleoyl.ethanolamide
+2024-05-31 13:23:44.652965 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0174..tartarate
+2024-05-31 13:23:44.729893 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0045..azelate
+2024-05-31 13:23:44.790813 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0295..arginine
+2024-05-31 13:23:44.867826 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0036..creatinine
+2024-05-31 13:23:44.941489 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1045..chenodeoxycholate
+2024-05-31 13:23:45.007034 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0167..methionine
+2024-05-31 13:23:45.084301 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0372..N.acetylglutamate
+2024-05-31 13:23:45.146501 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_2052..bilirubin
+2024-05-31 13:23:45.369646 INFO::Creating boxplot for categorical data, antibiotic vs C8.pos_Cluster_1900..cholestenone
+2024-05-31 13:23:45.435599 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0901..7.ketodeoxycholate
+2024-05-31 13:23:45.518844 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0365..azelaic.acid
+2024-05-31 13:23:45.596236 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0121..imidazole.propionate
+2024-05-31 13:23:45.658768 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0064..sebacate
+2024-05-31 13:23:45.735204 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_1403..cholate
+2024-05-31 13:23:45.796245 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0677..cystine
+2024-05-31 13:23:45.872662 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0832..chenodeoxycholate
+2024-05-31 13:23:45.969996 INFO::Creating boxplot for categorical data, antibiotic vs C8.pos_Cluster_0705..cholestenone
+2024-05-31 13:23:46.031192 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0079..4.hydroxybenzaldehyde
+2024-05-31 13:23:46.112308 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1465..taurolithocholic.acid
+2024-05-31 13:23:46.311585 INFO::Creating boxplot for categorical data, antibiotic vs C8.pos_Cluster_1849..cholestenone
+2024-05-31 13:23:46.40893 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0084..4.methylcatechol
+2024-05-31 13:23:46.473507 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0113..trigonelline
+2024-05-31 13:23:46.554508 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1081..glycolithocholic.acid
+2024-05-31 13:23:46.617555 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0622..1.2.3.4.tetrahydro.1.methyl.beta.carboline.3.carboxylic.acid
+2024-05-31 13:23:46.697792 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0419..N.acetylhistidine
+2024-05-31 13:23:46.773079 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0332..saccharin
+2024-05-31 13:23:46.841853 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0486..carnosol
+2024-05-31 13:23:46.925829 INFO::Creating boxplot for categorical data, antibiotic vs C8.pos_Cluster_0629..cholestenone
+2024-05-31 13:23:46.989895 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0118..malate
+2024-05-31 13:23:47.070097 INFO::Creating boxplot for categorical data, antibiotic vs C8.pos_Cluster_0339..linoleoyl.ethanolamide
+2024-05-31 13:23:47.132492 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0379..trimethyllysine
+2024-05-31 13:23:47.350784 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0020..lactate
+2024-05-31 13:23:47.427681 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_1370..5alpha.cholestanol
+2024-05-31 13:23:47.509826 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1129..chenodeoxycholate
+2024-05-31 13:23:47.58428 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0177..4.hydroxy.3.methylacetophenone
+2024-05-31 13:23:47.652191 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0392..citrate
+2024-05-31 13:23:47.735202 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0035..serine
+2024-05-31 13:23:47.796838 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0032..cytosine
+2024-05-31 13:23:47.877821 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1292..chenodeoxycholate
+2024-05-31 13:23:47.938928 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_1580..C18.2.carnitine
+2024-05-31 13:23:48.018895 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0192..ribitol
+2024-05-31 13:23:48.096009 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0740..deoxyinosine
+2024-05-31 13:23:48.162636 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0734..deoxyinosine
+2024-05-31 13:23:48.387716 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0062..alpha.ketoisovalerate
+2024-05-31 13:23:48.456505 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1941..arachidonic.acid
+2024-05-31 13:23:48.540988 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0817..atenolol
+2024-05-31 13:23:48.614289 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0254..3.methylxanthine
+2024-05-31 13:23:48.684256 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0394..9.10.diHOME
+2024-05-31 13:23:48.767682 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_1596..oleanolic.acid
+2024-05-31 13:23:48.82885 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0697..pentadecanoate
+2024-05-31 13:23:48.909972 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0089..hydroxyproline
+2024-05-31 13:23:48.98284 INFO::Creating boxplot for categorical data, antibiotic vs C18.neg_Cluster_0183..1.2.3.4.tetrahydro.b.carboline.1.3.dicarboxylic.acid
+2024-05-31 13:23:49.052345 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.neg_Cluster_0182..guanine
+2024-05-31 13:23:49.310188 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0374..N.acetylspermidine
+2024-05-31 13:23:49.479652 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0447..ADMA
+2024-05-31 13:23:49.555817 INFO::Creating boxplot for categorical data, antibiotic vs HILIC.pos_Cluster_0521..L.1.2.3.4.tetrahydro.beta.carboline.3.carboxylic.acid.
+2024-05-31 13:23:50.39469 INFO::Plotting data for metadata number 3, steroids
+2024-05-31 13:23:50.395649 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0447..ADMA
+2024-05-31 13:23:50.452899 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0036..creatinine
+2024-05-31 13:23:50.518396 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0090..creatine
+2024-05-31 13:23:50.585859 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0453..C2.carnitine
+2024-05-31 13:23:50.647216 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0490..docosapentaenoic.acid
+2024-05-31 13:23:50.714073 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0729..docosapentaenoic.acid
+2024-05-31 13:23:50.77339 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0441..sebacate
+2024-05-31 13:23:50.84041 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_1126..docosapentaenoate
+2024-05-31 13:23:50.898885 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0863..docosapentaenoic.acid
+2024-05-31 13:23:50.966227 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_1303..lithocholate
+2024-05-31 13:23:51.256917 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0298..dimethyllysine
+2024-05-31 13:23:51.331016 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_1324..docosapentaenoic.acid
+2024-05-31 13:23:51.399192 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0111..dodecanedioic.acid
+2024-05-31 13:23:51.456278 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0064..sebacate
+2024-05-31 13:23:51.52413 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0731..lithocholic.acid
+2024-05-31 13:23:51.583312 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0506..adrenic.acid
+2024-05-31 13:23:51.650437 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0288..suberate
+2024-05-31 13:23:51.710467 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0365..azelaic.acid
+2024-05-31 13:23:51.77734 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0230..carnitine
+2024-05-31 13:23:51.83615 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0182..guanine
+2024-05-31 13:23:51.902702 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0622..1.2.3.4.tetrahydro.1.methyl.beta.carboline.3.carboxylic.acid
+2024-05-31 13:23:51.976407 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0299..ascorbate
+2024-05-31 13:23:52.073927 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0184..pyridoxamine
+2024-05-31 13:23:52.251628 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_1300..riboflavin
+2024-05-31 13:23:52.318202 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_1002..eicosapentaenoic.acid
+2024-05-31 13:23:52.385622 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0045..azelate
+2024-05-31 13:23:52.469438 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0901..7.ketodeoxycholate
+2024-05-31 13:23:52.527866 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0246..linoleic.acid
+2024-05-31 13:23:52.599392 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0079..undecanedionate
+2024-05-31 13:23:52.657982 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0161..2.methylglutaric.acid
+2024-05-31 13:23:52.72833 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0521..L.1.2.3.4.tetrahydro.beta.carboline.3.carboxylic.acid.
+2024-05-31 13:23:52.787227 INFO::Creating boxplot for categorical data, steroids vs C8.pos_Cluster_1900..cholestenone
+2024-05-31 13:23:52.85897 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0250..oleic.acid
+2024-05-31 13:23:52.918099 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0913..ethyl.9.hexadecenoate
+2024-05-31 13:23:52.988599 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0268..pyridoxamine
+2024-05-31 13:23:53.079257 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0354..arachidonic.acid
+2024-05-31 13:23:53.265359 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0833..deoxycholic.acid
+2024-05-31 13:23:53.331098 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_1374..C14.carnitine
+2024-05-31 13:23:53.404575 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0709..arachidonic.acid
+2024-05-31 13:23:53.475017 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_1486..C16.carnitine
+2024-05-31 13:23:53.534692 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0351..eicosapentaenoic.acid
+2024-05-31 13:23:53.60547 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0384..N.acetylglutamic.acid
+2024-05-31 13:23:53.666541 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_1131..arachidonic.acid
+2024-05-31 13:23:53.736851 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0677..cystine
+2024-05-31 13:23:53.796898 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0177..4.hydroxy.3.methylacetophenone
+2024-05-31 13:23:53.867397 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_1620..arachidonic.acid
+2024-05-31 13:23:53.926774 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0020..lactate
+2024-05-31 13:23:53.998228 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0103..acetylalanine
+2024-05-31 13:23:54.201634 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_1621..cholate
+2024-05-31 13:23:54.276308 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_1722..cholate
+2024-05-31 13:23:54.353397 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_1941..arachidonic.acid
+2024-05-31 13:23:54.412387 INFO::Creating boxplot for categorical data, steroids vs C8.pos_Cluster_0478..cholestenone
+2024-05-31 13:23:54.483242 INFO::Creating boxplot for categorical data, steroids vs C8.pos_Cluster_0166..sphingosine
+2024-05-31 13:23:54.542161 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_1370..5alpha.cholestanol
+2024-05-31 13:23:54.617133 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0930..cholate
+2024-05-31 13:23:54.68817 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0125..phenylacetate
+2024-05-31 13:23:54.74703 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0203..orotate
+2024-05-31 13:23:54.818488 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0244..alpha.linolenic.acid
+2024-05-31 13:23:54.877691 INFO::Creating boxplot for categorical data, steroids vs C8.pos_Cluster_0554..cholestenone
+2024-05-31 13:23:54.946817 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0591..eicosatrienoic.acid
+2024-05-31 13:23:55.01809 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0114..2.hydroxyphenethylamine
+2024-05-31 13:23:55.113023 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_1275..oleanolic.acid
+2024-05-31 13:23:55.298136 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0472..docosahexaenoic.acid
+2024-05-31 13:23:55.362876 INFO::Creating boxplot for categorical data, steroids vs HILIC.pos_Cluster_0540..pantothenate
+2024-05-31 13:23:55.453884 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_1258..cholate
+2024-05-31 13:23:55.516061 INFO::Creating boxplot for categorical data, steroids vs C18.neg_Cluster_0361..eicosatrienoic.acid
+2024-05-31 13:23:55.588793 INFO::Creating boxplot for categorical data, steroids vs HILIC.neg_Cluster_0372..N.acetylglutamate
+2024-05-31 13:23:56.465204 INFO::Plotting data for metadata number 4, mesalamine
+2024-05-31 13:23:56.466168 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0562..ethyl.glucuronide
+2024-05-31 13:23:56.536455 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0335..4.pyridoxate
+2024-05-31 13:23:56.595997 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0272..3.methylhistidine
+2024-05-31 13:23:56.672403 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0081..pipecolic.acid
+2024-05-31 13:23:56.746142 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0328..homovanillate
+2024-05-31 13:23:56.805468 INFO::Creating boxplot for categorical data, mesalamine vs C8.pos_Cluster_0288..palmitoyl.glycerol
+2024-05-31 13:23:56.879763 INFO::Creating boxplot for categorical data, mesalamine vs C18.neg_Cluster_0019..p.hydroxyphenylacetate
+2024-05-31 13:23:56.939687 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0103..acetylalanine
+2024-05-31 13:23:57.013959 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0059..proline
+2024-05-31 13:23:57.073663 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_2052..bilirubin
+2024-05-31 13:23:57.206004 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0306..citrulline
+2024-05-31 13:23:57.477597 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0133..4.nitrophenol
+2024-05-31 13:23:57.546468 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0041..proline
+2024-05-31 13:23:57.620139 INFO::Creating boxplot for categorical data, mesalamine vs C8.pos_Cluster_0100..7.hexadecenoic.acid.methyl.ester
+2024-05-31 13:23:57.681665 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0066..taurine
+2024-05-31 13:23:57.753306 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0622..1.2.3.4.tetrahydro.1.methyl.beta.carboline.3.carboxylic.acid
+2024-05-31 13:23:57.814127 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0085..taurine
+2024-05-31 13:23:57.88659 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0079..4.hydroxybenzaldehyde
+2024-05-31 13:23:57.961979 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0129..salicylate
+2024-05-31 13:23:58.023001 INFO::Creating boxplot for categorical data, mesalamine vs C18.neg_Cluster_0183..1.2.3.4.tetrahydro.b.carboline.1.3.dicarboxylic.acid
+2024-05-31 13:23:58.09603 INFO::Creating boxplot for categorical data, mesalamine vs C18.neg_Cluster_0394..9.10.diHOME
+2024-05-31 13:23:58.284232 INFO::Creating boxplot for categorical data, mesalamine vs C18.neg_Cluster_1465..taurolithocholic.acid
+2024-05-31 13:23:58.378392 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0817..atenolol
+2024-05-31 13:23:58.451091 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0540..pantothenate
+2024-05-31 13:23:58.51399 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_1113..phytosphingosine
+2024-05-31 13:23:58.604631 INFO::Creating boxplot for categorical data, mesalamine vs C18.neg_Cluster_0268..hexadecanedioic.acid
+2024-05-31 13:23:58.665534 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_1374..C14.carnitine
+2024-05-31 13:23:58.742025 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0032..2.aminobutyric.acid
+2024-05-31 13:23:58.803139 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0062..nicotinic.acid
+2024-05-31 13:23:58.87993 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0151..butyrobetaine
+2024-05-31 13:23:58.940737 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0118..malate
+2024-05-31 13:23:59.015938 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0159..alpha.ketoglutarate
+2024-05-31 13:23:59.085934 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0082..N.methylproline
+2024-05-31 13:23:59.186729 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0521..L.1.2.3.4.tetrahydro.beta.carboline.3.carboxylic.acid.
+2024-05-31 13:23:59.393726 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0034..alpha.hydroxybutyrate
+2024-05-31 13:23:59.458005 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.neg_Cluster_0203..orotate
+2024-05-31 13:23:59.535265 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0658..geranyl.acetoacetate.
+2024-05-31 13:23:59.595733 INFO::Creating boxplot for categorical data, mesalamine vs HILIC.pos_Cluster_0172..triethanolamine
+2024-05-31 13:23:59.673551 INFO::Creating boxplot for categorical data, mesalamine vs C18.neg_Cluster_1275..oleanolic.acid
+2024-05-31 13:24:00.580392 INFO::Plotting data for metadata number 5, immunosuppressant
+2024-05-31 13:24:00.581701 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0335..4.pyridoxate
+2024-05-31 13:24:00.64429 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0540..pantothenate
+2024-05-31 13:24:00.721573 INFO::Creating boxplot for categorical data, immunosuppressant vs C18.neg_Cluster_0183..1.2.3.4.tetrahydro.b.carboline.1.3.dicarboxylic.acid
+2024-05-31 13:24:00.782371 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0117..aspartate
+2024-05-31 13:24:00.859504 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0817..atenolol
+2024-05-31 13:24:00.919398 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0082..nicotinate
+2024-05-31 13:24:00.995542 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0521..L.1.2.3.4.tetrahydro.beta.carboline.3.carboxylic.acid.
+2024-05-31 13:24:01.072257 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0062..nicotinic.acid
+2024-05-31 13:24:01.133047 INFO::Creating boxplot for categorical data, immunosuppressant vs C18.neg_Cluster_0351..eicosapentaenoic.acid
+2024-05-31 13:24:01.457795 INFO::Creating boxplot for categorical data, immunosuppressant vs C18.neg_Cluster_1575..taurodeoxycholic.acid
+2024-05-31 13:24:01.537663 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0552..pantothete
+2024-05-31 13:24:01.617584 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0133..4.nitrophenol
+2024-05-31 13:24:01.694707 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0079..4.hydroxybenzaldehyde
+2024-05-31 13:24:01.756812 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0268..pyridoxamine
+2024-05-31 13:24:01.854288 INFO::Creating boxplot for categorical data, immunosuppressant vs C18.neg_Cluster_0019..p.hydroxyphenylacetate
+2024-05-31 13:24:01.917412 INFO::Creating boxplot for categorical data, immunosuppressant vs C18.neg_Cluster_0164..palmitoleic.acid
+2024-05-31 13:24:01.99829 INFO::Creating boxplot for categorical data, immunosuppressant vs C8.pos_Cluster_0515..beta.sitosterol
+2024-05-31 13:24:02.074835 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0003..propionate
+2024-05-31 13:24:02.143783 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_1374..C14.carnitine
+2024-05-31 13:24:02.266402 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0081..pipecolic.acid
+2024-05-31 13:24:02.449467 INFO::Creating boxplot for categorical data, immunosuppressant vs C18.neg_Cluster_1275..oleanolic.acid
+2024-05-31 13:24:02.535692 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0562..ethyl.glucuronide
+2024-05-31 13:24:02.602167 INFO::Creating boxplot for categorical data, immunosuppressant vs C8.pos_Cluster_0123..sphingosine
+2024-05-31 13:24:02.688128 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0152..acetylcholine
+2024-05-31 13:24:02.752693 INFO::Creating boxplot for categorical data, immunosuppressant vs C18.neg_Cluster_1596..oleanolic.acid
+2024-05-31 13:24:02.832098 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0333..tyrosine
+2024-05-31 13:24:02.915071 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0151..butyrobetaine
+2024-05-31 13:24:02.980704 INFO::Creating boxplot for categorical data, immunosuppressant vs C18.neg_Cluster_0472..docosahexaenoic.acid
+2024-05-31 13:24:03.061876 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0020..lactate
+2024-05-31 13:24:03.126969 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0022..choline
+2024-05-31 13:24:03.245453 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0040..pyrocatechol
+2024-05-31 13:24:03.434917 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0125..phenylacetate
+2024-05-31 13:24:03.508443 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0009..beta.alanine
+2024-05-31 13:24:03.59003 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0066..taurine
+2024-05-31 13:24:03.651071 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.neg_Cluster_0062..alpha.ketoisovalerate
+2024-05-31 13:24:03.730689 INFO::Creating boxplot for categorical data, immunosuppressant vs C18.neg_Cluster_0394..9.10.diHOME
+2024-05-31 13:24:03.791493 INFO::Creating boxplot for categorical data, immunosuppressant vs HILIC.pos_Cluster_0177..4.hydroxy.3.methylacetophenone

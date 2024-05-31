@@ -1,0 +1,360 @@
+2024-05-31 13:22:42.920107 INFO::Writing function arguments to log file
+2024-05-31 13:22:42.922066 DEBUG::Function arguments
+2024-05-31 13:22:42.922785 DEBUG::Output folder: demo_output
+2024-05-31 13:22:42.92337 DEBUG::Min Abundance: 0.000000
+2024-05-31 13:22:42.923994 DEBUG::Min Prevalence: 0.100000
+2024-05-31 13:22:42.924671 DEBUG::Normalization: TSS
+2024-05-31 13:22:42.925194 DEBUG::Transform: LOG
+2024-05-31 13:22:42.925807 DEBUG::Analysis method: LM
+2024-05-31 13:22:42.926373 DEBUG::Max significance: 0.250000
+2024-05-31 13:22:42.92678 DEBUG::Random effects:
+2024-05-31 13:22:42.927307 DEBUG::Fixed effects: diagnosis_modified,antibiotic,immunosuppressant,mesalamine,steroids
+2024-05-31 13:22:42.927815 DEBUG::Correction method: BH
+2024-05-31 13:22:42.928674 DEBUG::Standardize: FALSE
+2024-05-31 13:22:42.928971 DEBUG::Cores: 1
+2024-05-31 13:22:42.929259 INFO::Verifying options selected are valid
+2024-05-31 13:22:42.930174 INFO::Determining format of input files
+2024-05-31 13:22:42.931008 INFO::Input format is data samples as rows and metadata samples as rows
+2024-05-31 13:22:42.935282 DEBUG::A total of 220 samples were found in both the data and metadata
+2024-05-31 13:22:42.936718 DEBUG::Reordering data/metadata to use same sample ordering
+2024-05-31 13:22:42.943358 INFO::Formula for fixed effects: expr ~  diagnosis_modified + antibiotic + immunosuppressant + mesalamine + steroids
+2024-05-31 13:22:42.944717 INFO::Factor detected for categorial metadata 'diagnosis_modified'. Provide a reference argument or manually set factor ordering to change reference level.
+2024-05-31 13:22:42.946488 INFO::Filter data based on min abundance and min prevalence
+2024-05-31 13:22:42.948427 INFO::Total samples in data: 220
+2024-05-31 13:22:42.949397 INFO::Min samples required with min abundance for a feature not to be filtered: 22.000000
+2024-05-31 13:22:42.954578 INFO::Total filtered features: 0
+2024-05-31 13:22:42.956034 INFO::Filtered feature names from abundance and prevalence filtering:
+2024-05-31 13:22:43.050734 INFO::Total filtered features with variance filtering: 1
+2024-05-31 13:22:43.051969 INFO::Filtered feature names from variance filtering: Sample
+2024-05-31 13:22:43.052659 INFO::Running selected normalization method: TSS
+2024-05-31 13:22:43.0578 INFO::Bypass z-score application to metadata
+2024-05-31 13:22:43.058463 INFO::Running selected transform method: LOG
+2024-05-31 13:22:43.066619 INFO::Running selected analysis method: LM
+2024-05-31 13:22:43.067679 INFO::Fitting model to feature number 1, C18.neg_Cluster_0004..4.hydroxystyrene
+2024-05-31 13:22:43.070139 INFO::Fitting model to feature number 2, C18.neg_Cluster_0019..p.hydroxyphenylacetate
+2024-05-31 13:22:43.07264 INFO::Fitting model to feature number 3, C18.neg_Cluster_0025..acesulfame
+2024-05-31 13:22:43.075083 INFO::Fitting model to feature number 4, C18.neg_Cluster_0031..phenyllactate
+2024-05-31 13:22:43.077968 INFO::Fitting model to feature number 5, C18.neg_Cluster_0045..azelate
+2024-05-31 13:22:43.080537 INFO::Fitting model to feature number 6, C18.neg_Cluster_0064..sebacate
+2024-05-31 13:22:43.084862 INFO::Fitting model to feature number 7, C18.neg_Cluster_0079..undecanedionate
+2024-05-31 13:22:43.087233 INFO::Fitting model to feature number 8, C18.neg_Cluster_0090..acetytyrosine
+2024-05-31 13:22:43.089388 INFO::Fitting model to feature number 9, C18.neg_Cluster_0107..myristic.acid
+2024-05-31 13:22:43.091899 INFO::Fitting model to feature number 10, C18.neg_Cluster_0111..dodecanedioic.acid
+2024-05-31 13:22:43.094209 INFO::Fitting model to feature number 11, C18.neg_Cluster_0144..2.hydroxymyristic.acid
+2024-05-31 13:22:43.096502 INFO::Fitting model to feature number 12, C18.neg_Cluster_0164..palmitoleic.acid
+2024-05-31 13:22:43.099025 INFO::Fitting model to feature number 13, C18.neg_Cluster_0171..palmitic.acid
+2024-05-31 13:22:43.101135 INFO::Fitting model to feature number 14, C18.neg_Cluster_0177..tetradecanedioate
+2024-05-31 13:22:43.10463 INFO::Fitting model to feature number 15, C18.neg_Cluster_0183..1.2.3.4.tetrahydro.b.carboline.1.3.dicarboxylic.acid
+2024-05-31 13:22:43.107961 INFO::Fitting model to feature number 16, C18.neg_Cluster_0219..2.hydroxyhexadecanoate
+2024-05-31 13:22:43.110174 INFO::Fitting model to feature number 17, C18.neg_Cluster_0244..alpha.linolenic.acid
+2024-05-31 13:22:43.113224 INFO::Fitting model to feature number 18, C18.neg_Cluster_0246..linoleic.acid
+2024-05-31 13:22:43.116205 INFO::Fitting model to feature number 19, C18.neg_Cluster_0250..oleic.acid
+2024-05-31 13:22:43.118539 INFO::Fitting model to feature number 20, C18.neg_Cluster_0256..stearic.acid
+2024-05-31 13:22:43.120446 INFO::Fitting model to feature number 21, C18.neg_Cluster_0268..hexadecanedioic.acid
+2024-05-31 13:22:43.122599 INFO::Fitting model to feature number 22, C18.neg_Cluster_0351..eicosapentaenoic.acid
+2024-05-31 13:22:43.12455 INFO::Fitting model to feature number 23, C18.neg_Cluster_0354..arachidonic.acid
+2024-05-31 13:22:43.126542 INFO::Fitting model to feature number 24, C18.neg_Cluster_0361..eicosatrienoic.acid
+2024-05-31 13:22:43.128903 INFO::Fitting model to feature number 25, C18.neg_Cluster_0373..eicosenoate
+2024-05-31 13:22:43.131113 INFO::Fitting model to feature number 26, C18.neg_Cluster_0393..12.13.diHOME
+2024-05-31 13:22:43.133624 INFO::Fitting model to feature number 27, C18.neg_Cluster_0394..9.10.diHOME
+2024-05-31 13:22:43.137095 INFO::Fitting model to feature number 28, C18.neg_Cluster_0472..docosahexaenoic.acid
+2024-05-31 13:22:43.138861 INFO::Fitting model to feature number 29, C18.neg_Cluster_0486..carnosol
+2024-05-31 13:22:43.140683 INFO::Fitting model to feature number 30, C18.neg_Cluster_0490..docosapentaenoic.acid
+2024-05-31 13:22:43.17383 INFO::Fitting model to feature number 31, C18.neg_Cluster_0506..adrenic.acid
+2024-05-31 13:22:43.179896 INFO::Fitting model to feature number 32, C18.neg_Cluster_0515..palmitoylethanolamide
+2024-05-31 13:22:43.184607 INFO::Fitting model to feature number 33, C18.neg_Cluster_0530..13.docosenoate
+2024-05-31 13:22:43.188031 INFO::Fitting model to feature number 34, C18.neg_Cluster_0563..palmitoylethanolamide
+2024-05-31 13:22:43.190918 INFO::Fitting model to feature number 35, C18.neg_Cluster_0591..eicosatrienoic.acid
+2024-05-31 13:22:43.193895 INFO::Fitting model to feature number 36, C18.neg_Cluster_0672..nervonic.acid
+2024-05-31 13:22:43.197377 INFO::Fitting model to feature number 37, C18.neg_Cluster_0709..arachidonic.acid
+2024-05-31 13:22:43.200148 INFO::Fitting model to feature number 38, C18.neg_Cluster_0729..docosapentaenoic.acid
+2024-05-31 13:22:43.202536 INFO::Fitting model to feature number 39, C18.neg_Cluster_0731..lithocholic.acid
+2024-05-31 13:22:43.205184 INFO::Fitting model to feature number 40, C18.neg_Cluster_0832..chenodeoxycholate
+2024-05-31 13:22:43.207518 INFO::Fitting model to feature number 41, C18.neg_Cluster_0833..deoxycholic.acid
+2024-05-31 13:22:43.210141 INFO::Fitting model to feature number 42, C18.neg_Cluster_0863..docosapentaenoic.acid
+2024-05-31 13:22:43.213008 INFO::Fitting model to feature number 43, C18.neg_Cluster_0900..ketodeoxycholate
+2024-05-31 13:22:43.215452 INFO::Fitting model to feature number 44, C18.neg_Cluster_0901..7.ketodeoxycholate
+2024-05-31 13:22:43.21733 INFO::Fitting model to feature number 45, C18.neg_Cluster_0927..alpha.muricholate
+2024-05-31 13:22:43.21912 INFO::Fitting model to feature number 46, C18.neg_Cluster_0930..cholate
+2024-05-31 13:22:43.220672 INFO::Fitting model to feature number 47, C18.neg_Cluster_1045..chenodeoxycholate
+2024-05-31 13:22:43.222237 INFO::Fitting model to feature number 48, C18.neg_Cluster_1060..chenodeoxycholate
+2024-05-31 13:22:43.224076 INFO::Fitting model to feature number 49, C18.neg_Cluster_1081..glycolithocholic.acid
+2024-05-31 13:22:43.225784 INFO::Fitting model to feature number 50, C18.neg_Cluster_1129..chenodeoxycholate
+2024-05-31 13:22:43.227382 INFO::Fitting model to feature number 51, C18.neg_Cluster_1131..arachidonic.acid
+2024-05-31 13:22:43.229398 INFO::Fitting model to feature number 52, C18.neg_Cluster_1178..cholate
+2024-05-31 13:22:43.231091 INFO::Fitting model to feature number 53, C18.neg_Cluster_1196..glycodeoxycholic.acid
+2024-05-31 13:22:43.232745 INFO::Fitting model to feature number 54, C18.neg_Cluster_1197..glycoursodeoxycholic.acid
+2024-05-31 13:22:43.234517 INFO::Fitting model to feature number 55, C18.neg_Cluster_1258..cholate
+2024-05-31 13:22:43.23607 INFO::Fitting model to feature number 56, C18.neg_Cluster_1273..cholate
+2024-05-31 13:22:43.237638 INFO::Fitting model to feature number 57, C18.neg_Cluster_1275..oleanolic.acid
+2024-05-31 13:22:43.23941 INFO::Fitting model to feature number 58, C18.neg_Cluster_1292..chenodeoxycholate
+2024-05-31 13:22:43.240966 INFO::Fitting model to feature number 59, C18.neg_Cluster_1324..docosapentaenoic.acid
+2024-05-31 13:22:43.242613 INFO::Fitting model to feature number 60, C18.neg_Cluster_1372..cholate
+2024-05-31 13:22:43.244536 INFO::Fitting model to feature number 61, C18.neg_Cluster_1385..maslinic.acid
+2024-05-31 13:22:43.246221 INFO::Fitting model to feature number 62, C18.neg_Cluster_1465..taurolithocholic.acid
+2024-05-31 13:22:43.247983 INFO::Fitting model to feature number 63, C18.neg_Cluster_1574..taurochenodesoxycholic.acid
+2024-05-31 13:22:43.249975 INFO::Fitting model to feature number 64, C18.neg_Cluster_1575..taurodeoxycholic.acid
+2024-05-31 13:22:43.251627 INFO::Fitting model to feature number 65, C18.neg_Cluster_1596..oleanolic.acid
+2024-05-31 13:22:43.253231 INFO::Fitting model to feature number 66, C18.neg_Cluster_1620..arachidonic.acid
+2024-05-31 13:22:43.254987 INFO::Fitting model to feature number 67, C18.neg_Cluster_1621..cholate
+2024-05-31 13:22:43.256554 INFO::Fitting model to feature number 68, C18.neg_Cluster_1680..maslinic.acid
+2024-05-31 13:22:43.258105 INFO::Fitting model to feature number 69, C18.neg_Cluster_1722..cholate
+2024-05-31 13:22:43.260045 INFO::Fitting model to feature number 70, C18.neg_Cluster_1803..maslinic.acid
+2024-05-31 13:22:43.26181 INFO::Fitting model to feature number 71, C18.neg_Cluster_1941..arachidonic.acid
+2024-05-31 13:22:43.263456 INFO::Fitting model to feature number 72, C18.neg_Cluster_2021..urobilin
+2024-05-31 13:22:43.265431 INFO::Fitting model to feature number 73, C18.neg_Cluster_2068..maslinic.acid
+2024-05-31 13:22:43.26736 INFO::Fitting model to feature number 74, C8.pos_Cluster_0100..7.hexadecenoic.acid.methyl.ester
+2024-05-31 13:22:43.269144 INFO::Fitting model to feature number 75, C8.pos_Cluster_0123..sphingosine
+2024-05-31 13:22:43.271449 INFO::Fitting model to feature number 76, C8.pos_Cluster_0136..piperine
+2024-05-31 13:22:43.273076 INFO::Fitting model to feature number 77, C8.pos_Cluster_0166..sphingosine
+2024-05-31 13:22:43.274807 INFO::Fitting model to feature number 78, C8.pos_Cluster_0168..palmitoylethanolamide
+2024-05-31 13:22:43.276656 INFO::Fitting model to feature number 79, C8.pos_Cluster_0253..sphingosine
+2024-05-31 13:22:43.278369 INFO::Fitting model to feature number 80, C8.pos_Cluster_0264..linoleoyl.ethanolamide
+2024-05-31 13:22:43.280017 INFO::Fitting model to feature number 81, C8.pos_Cluster_0277..stearoyl.ethanolamide
+2024-05-31 13:22:43.281841 INFO::Fitting model to feature number 82, C8.pos_Cluster_0288..palmitoyl.glycerol
+2024-05-31 13:22:43.283516 INFO::Fitting model to feature number 83, C8.pos_Cluster_0339..linoleoyl.ethanolamide
+2024-05-31 13:22:43.285049 INFO::Fitting model to feature number 84, C8.pos_Cluster_0341..N.oleoylethanolamine
+2024-05-31 13:22:43.286902 INFO::Fitting model to feature number 85, C8.pos_Cluster_0416..cholesterol
+2024-05-31 13:22:43.288475 INFO::Fitting model to feature number 86, C8.pos_Cluster_0478..cholestenone
+2024-05-31 13:22:43.290022 INFO::Fitting model to feature number 87, C8.pos_Cluster_0515..beta.sitosterol
+2024-05-31 13:22:43.291882 INFO::Fitting model to feature number 88, C8.pos_Cluster_0554..cholestenone
+2024-05-31 13:22:43.293524 INFO::Fitting model to feature number 89, C8.pos_Cluster_0629..cholestenone
+2024-05-31 13:22:43.295762 INFO::Fitting model to feature number 90, C8.pos_Cluster_0705..cholestenone
+2024-05-31 13:22:43.298037 INFO::Fitting model to feature number 91, C8.pos_Cluster_0988..sphingosine
+2024-05-31 13:22:43.30055 INFO::Fitting model to feature number 92, C8.pos_Cluster_1495..linoleoyl.ethanolamide
+2024-05-31 13:22:43.302377 INFO::Fitting model to feature number 93, C8.pos_Cluster_1849..cholestenone
+2024-05-31 13:22:43.30435 INFO::Fitting model to feature number 94, C8.pos_Cluster_1900..cholestenone
+2024-05-31 13:22:43.306015 INFO::Fitting model to feature number 95, HILIC.neg_Cluster_0003..propionate
+2024-05-31 13:22:43.30881 INFO::Fitting model to feature number 96, HILIC.neg_Cluster_0015..alanine
+2024-05-31 13:22:43.310896 INFO::Fitting model to feature number 97, HILIC.neg_Cluster_0016..oxalate
+2024-05-31 13:22:43.312539 INFO::Fitting model to feature number 98, HILIC.neg_Cluster_0020..lactate
+2024-05-31 13:22:43.314201 INFO::Fitting model to feature number 99, HILIC.neg_Cluster_0032..2.aminobutyric.acid
+2024-05-31 13:22:43.316126 INFO::Fitting model to feature number 100, HILIC.neg_Cluster_0033..malonate
+2024-05-31 13:22:43.32008 INFO::Fitting model to feature number 101, HILIC.neg_Cluster_0034..alpha.hydroxybutyrate
+2024-05-31 13:22:43.321927 INFO::Fitting model to feature number 102, HILIC.neg_Cluster_0035..serine
+2024-05-31 13:22:43.323971 INFO::Fitting model to feature number 103, HILIC.neg_Cluster_0036..glycerate
+2024-05-31 13:22:43.325568 INFO::Fitting model to feature number 104, HILIC.neg_Cluster_0040..pyrocatechol
+2024-05-31 13:22:43.327171 INFO::Fitting model to feature number 105, HILIC.neg_Cluster_0049..uracil
+2024-05-31 13:22:43.329039 INFO::Fitting model to feature number 106, HILIC.neg_Cluster_0059..proline
+2024-05-31 13:22:43.330641 INFO::Fitting model to feature number 107, HILIC.neg_Cluster_0062..alpha.ketoisovalerate
+2024-05-31 13:22:43.332428 INFO::Fitting model to feature number 108, HILIC.neg_Cluster_0064..caproic.acid
+2024-05-31 13:22:43.334325 INFO::Fitting model to feature number 109, HILIC.neg_Cluster_0066..valine
+2024-05-31 13:22:43.350024 INFO::Fitting model to feature number 110, HILIC.neg_Cluster_0069..succite
+2024-05-31 13:22:43.352478 INFO::Fitting model to feature number 111, HILIC.neg_Cluster_0073..threonine
+2024-05-31 13:22:43.354965 INFO::Fitting model to feature number 112, HILIC.neg_Cluster_0079..4.hydroxybenzaldehyde
+2024-05-31 13:22:43.357405 INFO::Fitting model to feature number 113, HILIC.neg_Cluster_0082..nicotinate
+2024-05-31 13:22:43.360069 INFO::Fitting model to feature number 114, HILIC.neg_Cluster_0084..4.methylcatechol
+2024-05-31 13:22:43.36297 INFO::Fitting model to feature number 115, HILIC.neg_Cluster_0085..taurine
+2024-05-31 13:22:43.365317 INFO::Fitting model to feature number 116, HILIC.neg_Cluster_0087..thymine
+2024-05-31 13:22:43.367622 INFO::Fitting model to feature number 117, HILIC.neg_Cluster_0103..acetylalanine
+2024-05-31 13:22:43.370076 INFO::Fitting model to feature number 118, HILIC.neg_Cluster_0105..leucine
+2024-05-31 13:22:43.372242 INFO::Fitting model to feature number 119, HILIC.neg_Cluster_0112..asparagine
+2024-05-31 13:22:43.374445 INFO::Fitting model to feature number 120, HILIC.neg_Cluster_0117..aspartate
+2024-05-31 13:22:43.377367 INFO::Fitting model to feature number 121, HILIC.neg_Cluster_0118..malate
+2024-05-31 13:22:43.379929 INFO::Fitting model to feature number 122, HILIC.neg_Cluster_0120..adenine
+2024-05-31 13:22:43.382206 INFO::Fitting model to feature number 123, HILIC.neg_Cluster_0122..erythronic.acid
+2024-05-31 13:22:43.384139 INFO::Fitting model to feature number 124, HILIC.neg_Cluster_0123..hypoxanthine
+2024-05-31 13:22:43.38564 INFO::Fitting model to feature number 125, HILIC.neg_Cluster_0125..phenylacetate
+2024-05-31 13:22:43.387104 INFO::Fitting model to feature number 126, HILIC.neg_Cluster_0129..salicylate
+2024-05-31 13:22:43.388938 INFO::Fitting model to feature number 127, HILIC.neg_Cluster_0133..4.nitrophenol
+2024-05-31 13:22:43.390528 INFO::Fitting model to feature number 128, HILIC.neg_Cluster_0156..caprylic.acid
+2024-05-31 13:22:43.392262 INFO::Fitting model to feature number 129, HILIC.neg_Cluster_0159..alpha.ketoglutarate
+2024-05-31 13:22:43.394132 INFO::Fitting model to feature number 130, HILIC.neg_Cluster_0161..2.methylglutaric.acid
+2024-05-31 13:22:43.396042 INFO::Fitting model to feature number 131, HILIC.neg_Cluster_0162..glutamine
+2024-05-31 13:22:43.397738 INFO::Fitting model to feature number 132, HILIC.neg_Cluster_0166..glutamate
+2024-05-31 13:22:43.399629 INFO::Fitting model to feature number 133, HILIC.neg_Cluster_0169..2.hydroxyglutarate
+2024-05-31 13:22:43.401316 INFO::Fitting model to feature number 134, HILIC.neg_Cluster_0173..methionine
+2024-05-31 13:22:43.402945 INFO::Fitting model to feature number 135, HILIC.neg_Cluster_0174..tartarate
+2024-05-31 13:22:43.404747 INFO::Fitting model to feature number 136, HILIC.neg_Cluster_0176..xylose
+2024-05-31 13:22:43.406315 INFO::Fitting model to feature number 137, HILIC.neg_Cluster_0181..hydrocinnamic.acid
+2024-05-31 13:22:43.407937 INFO::Fitting model to feature number 138, HILIC.neg_Cluster_0182..guanine
+2024-05-31 13:22:43.409832 INFO::Fitting model to feature number 139, HILIC.neg_Cluster_0187..xanthine
+2024-05-31 13:22:43.411478 INFO::Fitting model to feature number 140, HILIC.neg_Cluster_0192..ribitol
+2024-05-31 13:22:43.413067 INFO::Fitting model to feature number 141, HILIC.neg_Cluster_0201..histidine
+2024-05-31 13:22:43.41474 INFO::Fitting model to feature number 142, HILIC.neg_Cluster_0203..orotate
+2024-05-31 13:22:43.416261 INFO::Fitting model to feature number 143, HILIC.neg_Cluster_0204..imidazolelactate
+2024-05-31 13:22:43.417951 INFO::Fitting model to feature number 144, HILIC.neg_Cluster_0220..3.methyladipate.pimelate
+2024-05-31 13:22:43.419836 INFO::Fitting model to feature number 145, HILIC.neg_Cluster_0230..levoglucosan
+2024-05-31 13:22:43.42139 INFO::Fitting model to feature number 146, HILIC.neg_Cluster_0232..acesulfame
+2024-05-31 13:22:43.422981 INFO::Fitting model to feature number 147, HILIC.neg_Cluster_0237..fucose
+2024-05-31 13:22:43.424775 INFO::Fitting model to feature number 148, HILIC.neg_Cluster_0242..phenylalanine
+2024-05-31 13:22:43.426476 INFO::Fitting model to feature number 149, HILIC.neg_Cluster_0247..L.phenyllactic.acid
+2024-05-31 13:22:43.42811 INFO::Fitting model to feature number 150, HILIC.neg_Cluster_0254..urate
+2024-05-31 13:22:43.430103 INFO::Fitting model to feature number 151, HILIC.neg_Cluster_0283..shikimate
+2024-05-31 13:22:43.432301 INFO::Fitting model to feature number 152, HILIC.neg_Cluster_0288..suberate
+2024-05-31 13:22:43.434195 INFO::Fitting model to feature number 153, HILIC.neg_Cluster_0290..arginine
+2024-05-31 13:22:43.436119 INFO::Fitting model to feature number 154, HILIC.neg_Cluster_0296..citrulline
+2024-05-31 13:22:43.438239 INFO::Fitting model to feature number 155, HILIC.neg_Cluster_0299..ascorbate
+2024-05-31 13:22:43.439944 INFO::Fitting model to feature number 156, HILIC.neg_Cluster_0324..tyrosine
+2024-05-31 13:22:43.441969 INFO::Fitting model to feature number 157, HILIC.neg_Cluster_0328..homovanillate
+2024-05-31 13:22:43.443596 INFO::Fitting model to feature number 158, HILIC.neg_Cluster_0331..sorbitol
+2024-05-31 13:22:43.445234 INFO::Fitting model to feature number 159, HILIC.neg_Cluster_0332..saccharin
+2024-05-31 13:22:43.446992 INFO::Fitting model to feature number 160, HILIC.neg_Cluster_0335..4.pyridoxate
+2024-05-31 13:22:43.448536 INFO::Fitting model to feature number 161, HILIC.neg_Cluster_0365..azelaic.acid
+2024-05-31 13:22:43.450144 INFO::Fitting model to feature number 162, HILIC.neg_Cluster_0372..N.acetylglutamate
+2024-05-31 13:22:43.451966 INFO::Fitting model to feature number 163, HILIC.neg_Cluster_0392..citrate
+2024-05-31 13:22:43.453551 INFO::Fitting model to feature number 164, HILIC.neg_Cluster_0401..glucurote
+2024-05-31 13:22:43.455113 INFO::Fitting model to feature number 165, HILIC.neg_Cluster_0441..sebacate
+2024-05-31 13:22:43.456891 INFO::Fitting model to feature number 166, HILIC.neg_Cluster_0452..tryptophan
+2024-05-31 13:22:43.458477 INFO::Fitting model to feature number 167, HILIC.neg_Cluster_0480..1.3.7.trimethylurate
+2024-05-31 13:22:43.460027 INFO::Fitting model to feature number 168, HILIC.neg_Cluster_0552..pantothete
+2024-05-31 13:22:43.461981 INFO::Fitting model to feature number 169, HILIC.neg_Cluster_0562..ethyl.glucuronide
+2024-05-31 13:22:43.463977 INFO::Fitting model to feature number 170, HILIC.neg_Cluster_0622..1.2.3.4.tetrahydro.1.methyl.beta.carboline.3.carboxylic.acid
+2024-05-31 13:22:43.465678 INFO::Fitting model to feature number 171, HILIC.neg_Cluster_0677..cystine
+2024-05-31 13:22:43.467557 INFO::Fitting model to feature number 172, HILIC.neg_Cluster_0697..pentadecanoate
+2024-05-31 13:22:43.469131 INFO::Fitting model to feature number 173, HILIC.neg_Cluster_0706..uridine
+2024-05-31 13:22:43.470676 INFO::Fitting model to feature number 174, HILIC.neg_Cluster_0707..pseudouridine
+2024-05-31 13:22:43.472424 INFO::Fitting model to feature number 175, HILIC.neg_Cluster_0740..deoxyinosine
+2024-05-31 13:22:43.47395 INFO::Fitting model to feature number 176, HILIC.neg_Cluster_0824..inosine
+2024-05-31 13:22:43.475522 INFO::Fitting model to feature number 177, HILIC.neg_Cluster_0841..heptadecanoate
+2024-05-31 13:22:43.477296 INFO::Fitting model to feature number 178, HILIC.neg_Cluster_0909..guanosine
+2024-05-31 13:22:43.47885 INFO::Fitting model to feature number 179, HILIC.neg_Cluster_1002..eicosapentaenoic.acid
+2024-05-31 13:22:43.480342 INFO::Fitting model to feature number 180, HILIC.neg_Cluster_1088..linoleoyl.ethanolamide
+2024-05-31 13:22:43.482037 INFO::Fitting model to feature number 181, HILIC.neg_Cluster_1126..docosapentaenoate
+2024-05-31 13:22:43.483673 INFO::Fitting model to feature number 182, HILIC.neg_Cluster_1170..lactose
+2024-05-31 13:22:43.485176 INFO::Fitting model to feature number 183, HILIC.neg_Cluster_1300..riboflavin
+2024-05-31 13:22:43.487041 INFO::Fitting model to feature number 184, HILIC.neg_Cluster_1303..lithocholate
+2024-05-31 13:22:43.488565 INFO::Fitting model to feature number 185, HILIC.neg_Cluster_1325..linoleoyl.ethanolamide
+2024-05-31 13:22:43.490103 INFO::Fitting model to feature number 186, HILIC.neg_Cluster_1403..cholate
+2024-05-31 13:22:43.49182 INFO::Fitting model to feature number 187, HILIC.neg_Cluster_1571..glycocholate
+2024-05-31 13:22:43.493348 INFO::Fitting model to feature number 188, HILIC.pos_Cluster_0007..putrescine
+2024-05-31 13:22:43.509723 INFO::Fitting model to feature number 189, HILIC.pos_Cluster_0008..alanine
+2024-05-31 13:22:43.512819 INFO::Fitting model to feature number 190, HILIC.pos_Cluster_0009..beta.alanine
+2024-05-31 13:22:43.515024 INFO::Fitting model to feature number 191, HILIC.pos_Cluster_0022..choline
+2024-05-31 13:22:43.517234 INFO::Fitting model to feature number 192, HILIC.pos_Cluster_0024..serine
+2024-05-31 13:22:43.519671 INFO::Fitting model to feature number 193, HILIC.pos_Cluster_0032..cytosine
+2024-05-31 13:22:43.52187 INFO::Fitting model to feature number 194, HILIC.pos_Cluster_0033..histamine
+2024-05-31 13:22:43.524309 INFO::Fitting model to feature number 195, HILIC.pos_Cluster_0036..creatinine
+2024-05-31 13:22:43.527134 INFO::Fitting model to feature number 196, HILIC.pos_Cluster_0038..N.acetylputrescine
+2024-05-31 13:22:43.529377 INFO::Fitting model to feature number 197, HILIC.pos_Cluster_0041..proline
+2024-05-31 13:22:43.531624 INFO::Fitting model to feature number 198, HILIC.pos_Cluster_0046..valine
+2024-05-31 13:22:43.534013 INFO::Fitting model to feature number 199, HILIC.pos_Cluster_0048..betaine
+2024-05-31 13:22:43.536143 INFO::Fitting model to feature number 200, HILIC.pos_Cluster_0049..threonine
+2024-05-31 13:22:43.538342 INFO::Fitting model to feature number 201, HILIC.pos_Cluster_0062..nicotinic.acid
+2024-05-31 13:22:43.540683 INFO::Fitting model to feature number 202, HILIC.pos_Cluster_0066..taurine
+2024-05-31 13:22:43.542285 INFO::Fitting model to feature number 203, HILIC.pos_Cluster_0079..pyroglutamic.acid
+2024-05-31 13:22:43.54384 INFO::Fitting model to feature number 204, HILIC.pos_Cluster_0081..pipecolic.acid
+2024-05-31 13:22:43.545636 INFO::Fitting model to feature number 205, HILIC.pos_Cluster_0082..N.methylproline
+2024-05-31 13:22:43.547203 INFO::Fitting model to feature number 206, HILIC.pos_Cluster_0086..N.acetylputrescine
+2024-05-31 13:22:43.548788 INFO::Fitting model to feature number 207, HILIC.pos_Cluster_0089..hydroxyproline
+2024-05-31 13:22:43.550686 INFO::Fitting model to feature number 208, HILIC.pos_Cluster_0090..creatine
+2024-05-31 13:22:43.552529 INFO::Fitting model to feature number 209, HILIC.pos_Cluster_0091..leucine
+2024-05-31 13:22:43.554144 INFO::Fitting model to feature number 210, HILIC.pos_Cluster_0092..isoleucine
+2024-05-31 13:22:43.555953 INFO::Fitting model to feature number 211, HILIC.pos_Cluster_0099..asparagine
+2024-05-31 13:22:43.557563 INFO::Fitting model to feature number 212, HILIC.pos_Cluster_0100..ornithine
+2024-05-31 13:22:43.559347 INFO::Fitting model to feature number 213, HILIC.pos_Cluster_0108..hypoxanthine
+2024-05-31 13:22:43.561222 INFO::Fitting model to feature number 214, HILIC.pos_Cluster_0110..1.methylnicotinamide
+2024-05-31 13:22:43.562812 INFO::Fitting model to feature number 215, HILIC.pos_Cluster_0113..trigonelline
+2024-05-31 13:22:43.564417 INFO::Fitting model to feature number 216, HILIC.pos_Cluster_0114..2.hydroxyphenethylamine
+2024-05-31 13:22:43.566218 INFO::Fitting model to feature number 217, HILIC.pos_Cluster_0116..urocanic.acid
+2024-05-31 13:22:43.567697 INFO::Fitting model to feature number 218, HILIC.pos_Cluster_0121..imidazole.propionate
+2024-05-31 13:22:43.569187 INFO::Fitting model to feature number 219, HILIC.pos_Cluster_0134..proline.betaine
+2024-05-31 13:22:43.570943 INFO::Fitting model to feature number 220, HILIC.pos_Cluster_0150..4.guanidinobutanoic.acid
+2024-05-31 13:22:43.572441 INFO::Fitting model to feature number 221, HILIC.pos_Cluster_0151..butyrobetaine
+2024-05-31 13:22:43.573963 INFO::Fitting model to feature number 222, HILIC.pos_Cluster_0152..acetylcholine
+2024-05-31 13:22:43.575756 INFO::Fitting model to feature number 223, HILIC.pos_Cluster_0156..glutamine
+2024-05-31 13:22:43.577584 INFO::Fitting model to feature number 224, HILIC.pos_Cluster_0157..lysine
+2024-05-31 13:22:43.579359 INFO::Fitting model to feature number 225, HILIC.pos_Cluster_0160..glutamate
+2024-05-31 13:22:43.581196 INFO::Fitting model to feature number 226, HILIC.pos_Cluster_0167..methionine
+2024-05-31 13:22:43.582797 INFO::Fitting model to feature number 227, HILIC.pos_Cluster_0172..triethanolamine
+2024-05-31 13:22:43.584507 INFO::Fitting model to feature number 228, HILIC.pos_Cluster_0177..4.hydroxy.3.methylacetophenone
+2024-05-31 13:22:43.586261 INFO::Fitting model to feature number 229, HILIC.pos_Cluster_0184..pyridoxamine
+2024-05-31 13:22:43.587872 INFO::Fitting model to feature number 230, HILIC.pos_Cluster_0230..carnitine
+2024-05-31 13:22:43.589594 INFO::Fitting model to feature number 231, HILIC.pos_Cluster_0244..methionine.sulfoxide
+2024-05-31 13:22:43.591482 INFO::Fitting model to feature number 232, HILIC.pos_Cluster_0245..1.methylguanine
+2024-05-31 13:22:43.593508 INFO::Fitting model to feature number 233, HILIC.pos_Cluster_0246..7.methylguanine
+2024-05-31 13:22:43.595416 INFO::Fitting model to feature number 234, HILIC.pos_Cluster_0248..phenylalanine
+2024-05-31 13:22:43.597334 INFO::Fitting model to feature number 235, HILIC.pos_Cluster_0254..3.methylxanthine
+2024-05-31 13:22:43.598853 INFO::Fitting model to feature number 236, HILIC.pos_Cluster_0268..pyridoxamine
+2024-05-31 13:22:43.600374 INFO::Fitting model to feature number 237, HILIC.pos_Cluster_0272..3.methylhistidine
+2024-05-31 13:22:43.602139 INFO::Fitting model to feature number 238, HILIC.pos_Cluster_0295..arginine
+2024-05-31 13:22:43.60362 INFO::Fitting model to feature number 239, HILIC.pos_Cluster_0298..dimethyllysine
+2024-05-31 13:22:43.605259 INFO::Fitting model to feature number 240, HILIC.pos_Cluster_0306..citrulline
+2024-05-31 13:22:43.60706 INFO::Fitting model to feature number 241, HILIC.pos_Cluster_0333..tyrosine
+2024-05-31 13:22:43.608659 INFO::Fitting model to feature number 242, HILIC.pos_Cluster_0374..N.acetylspermidine
+2024-05-31 13:22:43.610329 INFO::Fitting model to feature number 243, HILIC.pos_Cluster_0379..trimethyllysine
+2024-05-31 13:22:43.612093 INFO::Fitting model to feature number 244, HILIC.pos_Cluster_0383..kynurenic.acid
+2024-05-31 13:22:43.613648 INFO::Fitting model to feature number 245, HILIC.pos_Cluster_0384..N.acetylglutamic.acid
+2024-05-31 13:22:43.615349 INFO::Fitting model to feature number 246, HILIC.pos_Cluster_0405..caffeine
+2024-05-31 13:22:43.617108 INFO::Fitting model to feature number 247, HILIC.pos_Cluster_0419..N.acetylhistidine
+2024-05-31 13:22:43.618684 INFO::Fitting model to feature number 248, HILIC.pos_Cluster_0422..5.acetylamino.6.amino.3.methyluracil
+2024-05-31 13:22:43.620295 INFO::Fitting model to feature number 249, HILIC.pos_Cluster_0447..ADMA
+2024-05-31 13:22:43.622052 INFO::Fitting model to feature number 250, HILIC.pos_Cluster_0453..C2.carnitine
+2024-05-31 13:22:43.623556 INFO::Fitting model to feature number 251, HILIC.pos_Cluster_0455..tryptophan
+2024-05-31 13:22:43.625055 INFO::Fitting model to feature number 252, HILIC.pos_Cluster_0495..N.acetylglutamic.acid
+2024-05-31 13:22:43.626829 INFO::Fitting model to feature number 253, HILIC.pos_Cluster_0521..L.1.2.3.4.tetrahydro.beta.carboline.3.carboxylic.acid.
+2024-05-31 13:22:43.628343 INFO::Fitting model to feature number 254, HILIC.pos_Cluster_0524..N.acetyl.L.arginine
+2024-05-31 13:22:43.629865 INFO::Fitting model to feature number 255, HILIC.pos_Cluster_0540..pantothenate
+2024-05-31 13:22:43.631858 INFO::Fitting model to feature number 256, HILIC.pos_Cluster_0590..carnosine
+2024-05-31 13:22:43.63342 INFO::Fitting model to feature number 257, HILIC.pos_Cluster_0657..geranyl.acetoacetate.
+2024-05-31 13:22:43.634937 INFO::Fitting model to feature number 258, HILIC.pos_Cluster_0658..geranyl.acetoacetate.
+2024-05-31 13:22:43.636698 INFO::Fitting model to feature number 259, HILIC.pos_Cluster_0667..anserine
+2024-05-31 13:22:43.638186 INFO::Fitting model to feature number 260, HILIC.pos_Cluster_0728..2.deoxyadenosine
+2024-05-31 13:22:43.639647 INFO::Fitting model to feature number 261, HILIC.pos_Cluster_0734..deoxyinosine
+2024-05-31 13:22:43.641331 INFO::Fitting model to feature number 262, HILIC.pos_Cluster_0797..thiamine
+2024-05-31 13:22:43.642752 INFO::Fitting model to feature number 263, HILIC.pos_Cluster_0817..atenolol
+2024-05-31 13:22:43.644405 INFO::Fitting model to feature number 264, HILIC.pos_Cluster_0822..inosine
+2024-05-31 13:22:43.646327 INFO::Fitting model to feature number 265, HILIC.pos_Cluster_0913..ethyl.9.hexadecenoate
+2024-05-31 13:22:43.64791 INFO::Fitting model to feature number 266, HILIC.pos_Cluster_0914..8.hydroxy.deoxyguanosine
+2024-05-31 13:22:43.663745 INFO::Fitting model to feature number 267, HILIC.pos_Cluster_0927..piperine
+2024-05-31 13:22:43.666958 INFO::Fitting model to feature number 268, HILIC.pos_Cluster_0936..diacetylspermine
+2024-05-31 13:22:43.670414 INFO::Fitting model to feature number 269, HILIC.pos_Cluster_1017..sphinganine
+2024-05-31 13:22:43.673045 INFO::Fitting model to feature number 270, HILIC.pos_Cluster_1113..phytosphingosine
+2024-05-31 13:22:43.675999 INFO::Fitting model to feature number 271, HILIC.pos_Cluster_1148..linoleoyl.ethanolamide
+2024-05-31 13:22:43.678544 INFO::Fitting model to feature number 272, HILIC.pos_Cluster_1160..linoleoyl.ethanolamide
+2024-05-31 13:22:43.680901 INFO::Fitting model to feature number 273, HILIC.pos_Cluster_1370..5alpha.cholestanol
+2024-05-31 13:22:43.683977 INFO::Fitting model to feature number 274, HILIC.pos_Cluster_1374..C14.carnitine
+2024-05-31 13:22:43.686266 INFO::Fitting model to feature number 275, HILIC.pos_Cluster_1486..C16.carnitine
+2024-05-31 13:22:43.688484 INFO::Fitting model to feature number 276, HILIC.pos_Cluster_1580..C18.2.carnitine
+2024-05-31 13:22:43.690963 INFO::Fitting model to feature number 277, HILIC.pos_Cluster_2052..bilirubin
+2024-05-31 13:22:43.693418 INFO::Fitting model to feature number 278, HILIC.pos_Cluster_2093..urobilin.
+2024-05-31 13:22:43.737855 INFO::Counting total values for each feature
+2024-05-31 13:22:43.764414 INFO::Writing filtered data to file demo_output/features/filtered_data.tsv
+2024-05-31 13:22:43.792091 INFO::Writing filtered, normalized data to file demo_output/features/filtered_data_norm.tsv
+2024-05-31 13:22:43.825721 INFO::Writing filtered, normalized, transformed data to file demo_output/features/filtered_data_norm_transformed.tsv
+2024-05-31 13:22:43.860578 WARNING::Deleting existing residuals file: demo_output/fits/residuals.rds
+2024-05-31 13:22:43.862125 INFO::Writing residuals to file demo_output/fits/residuals.rds
+2024-05-31 13:22:43.877153 WARNING::Deleting existing fitted file: demo_output/fits/fitted.rds
+2024-05-31 13:22:43.877956 INFO::Writing fitted values to file demo_output/fits/fitted.rds
+2024-05-31 13:22:43.885304 INFO::Writing all results to file (ordered by increasing q-values): demo_output/all_results.tsv
+2024-05-31 13:22:43.891336 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): demo_output/significant_results.tsv
+2024-05-31 13:22:43.894567 INFO::Writing heatmap of significant results to file: demo_output/heatmap.pdf
+2024-05-31 13:22:43.972393 INFO::Writing association plots (one for each significant association) to output folder: demo_output
+2024-05-31 13:22:43.97643 INFO::Plotting associations from most to least significant, grouped by metadata
+2024-05-31 13:22:43.977127 INFO::Plotting data for metadata number 1, diagnosis_modified
+2024-05-31 13:22:43.978017 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_2021..urobilin
+2024-05-31 13:22:44.16963 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_2093..urobilin.
+2024-05-31 13:22:44.251311 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1486..C16.carnitine
+2024-05-31 13:22:44.312738 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0268..pyridoxamine
+2024-05-31 13:22:44.394023 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0490..docosapentaenoic.acid
+2024-05-31 13:22:44.455265 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0863..docosapentaenoic.acid
+2024-05-31 13:22:44.53798 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0988..sphingosine
+2024-05-31 13:22:44.619837 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0521..L.1.2.3.4.tetrahydro.beta.carboline.3.carboxylic.acid.
+2024-05-31 13:22:44.685998 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1580..C18.2.carnitine
+2024-05-31 13:22:44.766982 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0506..adrenic.acid
+2024-05-31 13:22:44.828147 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0901..7.ketodeoxycholate
+2024-05-31 13:22:44.915025 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_1324..docosapentaenoic.acid
+2024-05-31 13:22:45.379429 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0441..sebacate
+2024-05-31 13:22:45.445642 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0268..hexadecanedioic.acid
+2024-05-31 13:22:45.523362 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0729..docosapentaenoic.acid
+2024-05-31 13:22:45.595303 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0591..eicosatrienoic.acid
+2024-05-31 13:22:45.663373 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0184..pyridoxamine
+2024-05-31 13:22:45.914647 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0079..undecanedionate
+2024-05-31 13:22:45.974522 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0264..linoleoyl.ethanolamide
+2024-05-31 13:22:46.169759 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0361..eicosatrienoic.acid
+2024-05-31 13:22:46.239133 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0253..sphingosine
+2024-05-31 13:22:46.308684 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_1374..C14.carnitine
+2024-05-31 13:22:46.365951 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0341..N.oleoylethanolamine
+2024-05-31 13:22:46.430628 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0384..N.acetylglutamic.acid
+2024-05-31 13:22:46.487944 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0045..azelate
+2024-05-31 13:22:46.552699 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0540..pantothenate
+2024-05-31 13:22:46.611553 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0339..linoleoyl.ethanolamide
+2024-05-31 13:22:46.677105 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0524..N.acetyl.L.arginine
+2024-05-31 13:22:46.737014 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0183..1.2.3.4.tetrahydro.b.carboline.1.3.dicarboxylic.acid
+2024-05-31 13:22:46.804485 INFO::Creating boxplot for categorical data, diagnosis_modified vs C8.pos_Cluster_0166..sphingosine
+2024-05-31 13:22:46.870124 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0177..4.hydroxy.3.methylacetophenone
+2024-05-31 13:22:46.928614 INFO::Creating boxplot for categorical data, diagnosis_modified vs C18.neg_Cluster_0832..chenodeoxycholate
+2024-05-31 13:22:47.027977 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_0288..suberate
+2024-05-31 13:22:47.19554 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0658..geranyl.acetoacetate.
+2024-05-31 13:22:47.267849 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.pos_Cluster_0062..nicotinic.acid
+2024-05-31 13:22:47.325508 INFO::Creating boxplot for categorical data, diagnosis_modified vs HILIC.neg_Cluster_1088..linoleoyl.ethanolamide

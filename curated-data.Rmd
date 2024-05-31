@@ -1,0 +1,187 @@
+---
+title: "microbiome-metabolome-curated-data"
+output: html_document
+date: "2024-05-30"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(Maaslin2)
+library(readr)
+library(dplyr)
+library(tidyr)
+
+genera <- read_tsv("/Users/una/processed_data/FRANZOSA_IBD_2019/genera.tsv")
+metadata <- read_tsv("/Users/una/processed_data/FRANZOSA_IBD_2019/metadata.tsv")
+
+# metadata$Study.Group <- as.character(metadata$Study.Group)
+# metadata$Disease.Status <- ifelse(metadata$Study.Group %in% c("UC", "CD"), "Disease", "Control")
+```
+
+
+# Genera-dataset statistics
+
+```{r}
+# Convert genera data from wide to long format
+genera_long <- gather(genera, key = "Taxon", value = "Abundance", -Sample)
+
+# Calculate genera-dataset statistics
+genera.dataset.stats <- genera_long %>%
+  group_by(Taxon) %>%
+  summarise(
+    Taxon.Mean.Abundance = mean(Abundance, na.rm = TRUE),
+    Taxon.Perc.of.Non.Zeros = mean(Abundance > 0) * 100
+  ) %>%
+  ungroup()
+
+# Add averaged statistics
+genera.dataset.stats <- genera.dataset.stats %>%
+  mutate(
+    Averaged.Taxon.Mean.Abundance = Taxon.Mean.Abundance,
+    Averaged.Taxon.Perc.of.Non.Zeros = Taxon.Perc.of.Non.Zeros
+  )
+
+```
+
+# Discard rare genera (defined here as <25% non-zero values or average abundance <0.1% over all datasets in this analysis)
+
+```{r}
+# Filter out genera with averaged percentage of non-zeros less than 25%
+genera.dataset.stats <- genera.dataset.stats %>%
+  filter(Averaged.Taxon.Perc.of.Non.Zeros >= 25)
+
+# Filter out genera with averaged mean abundance less than 0.001
+genera.dataset.stats <- genera.dataset.stats %>%
+  filter(Averaged.Taxon.Mean.Abundance >= 0.001)
+
+# Discard genera with percentage of non-zeros less than 10% in individual datasets
+genera.dataset.stats <- genera.dataset.stats %>%
+  filter(Taxon.Perc.of.Non.Zeros >= 10)
+
+# Discard ambiguous/unidentified genera
+genera.dataset.stats <- genera.dataset.stats %>%
+  filter(!grepl("g__$", Taxon))
+
+relevant_taxa <- genera.dataset.stats$Taxon
+genera_cols <- colnames(genera)
+matching_cols <- genera_cols[genera_cols %in% relevant_taxa]
+filtered_genera <- genera %>% select(Sample, any_of(matching_cols))
+
+```
+
+
+# Metabolite-dataset statistics
+
+```{r}
+metabolites_map <- read_tsv("/Users/una/processed_data/FRANZOSA_IBD_2019/mtb.map.tsv")
+metabolites <- read_tsv("/Users/una/processed_data/FRANZOSA_IBD_2019/mtb.tsv")
+
+# Select only numeric columns for calculation
+numeric_metabolites <- metabolites %>% select(where(is.numeric))
+
+# Metabolite-dataset statistics
+metabolites.per.dataset <- numeric_metabolites %>%
+  summarise_all(list(
+    Mean = ~mean(.),
+    SD = ~sd(.),
+    N = ~n()
+  ))
+
+```
+
+
+# Discard metabolites with no HMDB annotation or metabolites with constant values
+
+```{r}
+# Remove rows where HMDB is NA
+metabolites_map <- metabolites_map %>% drop_na(HMDB)
+
+# Select only numeric columns for calculation
+numeric_metabolites <- metabolites_map %>% select(where(is.numeric))
+
+# Function to check if a metabolite has constant values
+is.constant <- apply(numeric_metabolites, MARGIN = 2, function(col) {
+  var(col, na.rm = TRUE) == 0})
+
+# Filter out constant metabolites
+non_constant_metabolites <- numeric_metabolites[, !is.constant]
+
+# Get the names of the non-constant metabolites
+non_constant_metabolite_names <- colnames(non_constant_metabolites)
+
+# Filter the original metabolites dataframe to keep only non-constant metabolites
+filtered_metabolites <- metabolites_map %>% select(any_of(non_constant_metabolite_names), everything())
+
+metabolites_cols <- colnames(metabolites)
+matching_compounds <- metabolites_cols[metabolites_cols %in% filtered_metabolites$Compound]
+filtered_metabolites_data <- metabolites %>% select(Sample, any_of(matching_compounds))
+
+```
+
+# Print statistics
+
+```{r}
+
+common.pairs <- cross_join(genera.dataset.stats,
+                           filtered_metabolites) %>%
+  group_by(Taxon)
+
+paste(n_distinct(common.pairs), 
+      "unique genus-metabolite pairs will be analyzed")
+
+paste("These include", n_distinct(common.pairs$Compound), 
+      "metabolites and", n_distinct(common.pairs$Taxon), "genera")
+
+```
+
+
+# Residuals microbiome
+
+```{r}
+row.names(filtered_genera)<-filtered_genera$Sample
+
+metadata <- read_tsv("/Users/una/processed_data/FRANZOSA_IBD_2019/metadata.tsv")
+metadata$diagnosis_modified = factor(metadata$Study.Group,
+                                              levels = c("Control", "CD", "UC"))
+
+row.names(metadata)<-metadata$Sample
+
+# Perform MaAsLin2 analysis for microbiome data using the new 'Disease.Status' column
+fit_data <- Maaslin2(
+    input_data = filtered_genera,
+    input_metadata = metadata,
+    output = "demo_output",
+    fixed_effects = c('diagnosis_modified', 'antibiotic', 'immunosuppressant', 'mesalamine', 'steroids'),
+    standardize = FALSE
+)
+
+# Extract residuals
+residuals_microbiome <- fit_data$residuals
+
+```
+
+
+# Residuals metabolites
+
+```{r}
+
+row.names(filtered_metabolites_data)<-filtered_metabolites_data$Sample
+# row.names(metadata)<-metadata$Sample
+
+# Perform MaAsLin2 analysis for microbiome data using the new 'Disease.Status' column
+fit_data_2 <- Maaslin2(
+    input_data = filtered_metabolites_data,
+    input_metadata = metadata,
+    output = "demo_output",
+    fixed_effects = c('diagnosis_modified', 'antibiotic', 'immunosuppressant', 'mesalamine', 'steroids'),
+    standardize = FALSE
+)
+
+# Extract residuals
+residuals_metabolites <- fit_data_2$residuals
+
+```
