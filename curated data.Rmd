@@ -150,7 +150,6 @@ metadata$diagnosis_modified = factor(metadata$Study.Group,
 
 row.names(metadata)<-metadata$Sample
 
-# Perform MaAsLin2 analysis for microbiome data using the new 'Disease.Status' column
 fit_data <- Maaslin2(
     input_data = filtered_genera,
     input_metadata = metadata,
@@ -168,9 +167,8 @@ residuals_microbiome <- fit_data$residuals
 # Residuals metabolites
 
 ```{r}
-
 row.names(filtered_metabolites_data)<-filtered_metabolites_data$Sample
-# Perform MaAsLin2 analysis for microbiome data using the new 'Disease.Status' column
+
 fit_data_2 <- Maaslin2(
     input_data = filtered_metabolites_data,
     input_metadata = metadata,
