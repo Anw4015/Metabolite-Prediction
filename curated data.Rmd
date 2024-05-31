@@ -170,13 +170,11 @@ residuals_microbiome <- fit_data$residuals
 ```{r}
 
 row.names(filtered_metabolites_data)<-filtered_metabolites_data$Sample
-# row.names(metadata)<-metadata$Sample
-
 # Perform MaAsLin2 analysis for microbiome data using the new 'Disease.Status' column
 fit_data_2 <- Maaslin2(
     input_data = filtered_metabolites_data,
     input_metadata = metadata,
-    output = "demo_output",
+    output = "demo_output_2",
     fixed_effects = c('diagnosis_modified', 'antibiotic', 'immunosuppressant', 'mesalamine', 'steroids'),
     standardize = FALSE
 )
